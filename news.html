@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+
+    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
+    <title>新闻动态</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<!-- 导航条 -->
+
+<header>
+
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 0;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;">
+                    <li><a style="text-shadow: none" href="index.html" >首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="#" id="current">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html" id="sjactive">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
+<!-- 导航条 -->
+<!-- banner -->
+<div class="banner-sup" style="background: url(img/banner-news.png);background-size: 100% 100%;padding-bottom: 100px">
+    <div class="container">
+        <div class="row" style="margin-left: 1px">
+
+
+            <h1 class="banner-title-y" >新闻动态</h1>
+            <p class="banner-p-y" >
+                NEWS</p>
+
+        </div>
+    </div>
+</div>
+<!-- banner -->
+
+<!--新闻-->
+<div class=" new-main" style="margin-top: 50px">
+    <div class="container-fluid">
+
+    <div class="col-sm-3 col-sm-offset-2">
+        <img src="img/new1.png">
+    </div>
+    <div class="col-sm-5 ">
+        <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="newsone.html">电动单车公共充电服务迎风口？</a></h4>
+        <p style="color: #5b5b5b;font-size: 14px">
+            电动自行车的公共充电服务正在成为企业布局的新风口。近日，北京商报记者了解到，远盈智慧、小绿人科技等企业正在加速电动自行车的公共充电服务布局。
+            近年来，由于市售充电器不合格、车辆线路老化、短路等原因，电动自行车充电事故频发。以此为契机，不少企业试图以建立充电桩、
+            智能充电系统等方式向电动自行车领域进军...
+        </p>
+    </div>
+
+    </div>
+</div>
+<div class=" new-main" style="margin-top: 80px">
+    <div class="container-fluid">
+
+        <div class="col-sm-3 col-sm-offset-2">
+            <img src="img/new2.png">
+        </div>
+        <div class="col-sm-5 ">
+            <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">2018 CES：极客必备 Ujet智慧电动单车</a></h4>
+            <p style="color: #5b5b5b;font-size: 14px">
+                城市出行问题该如何解决？如果你嫌公共交通太挤，共享单车效率太低，买一辆汽车承受不起，共享汽车不够方便，
+                那下面要说的这款智慧电动单车你可以考虑考虑。在2018 CES展上，来自美国的Ujet公司展示了他们推出的智慧电动单车，
+                这款造型酷炫的电单车专门为解决城市出行问题而生...
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class=" new-main" style="margin-top: 80px">
+    <div class="container-fluid">
+
+        <div class="col-sm-3 col-sm-offset-2">
+            <img src="img/new3.png">
+        </div>
+        <div class="col-sm-5 ">
+            <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">电动自行车或将实名上牌!(含1月10日限行信息)</a></h4>
+            <p style="color: #5b5b5b;font-size: 14px">
+                近日，河北省公安厅交通管理局根据《道路交通安全法》授权，启动了《河北省电动自行车管理办法》立法工作。
+                面向广大市民征求电动自行车道路通行及相关管理工作的“金点子”“好办法”，其中涉及电动自行车是否将上牌、
+                超标电动自行车是否淘汰等问题，快来看看吧...
+            </p>
+
+        </div>
+
+    </div>
+</div>
+<div class=" new-main" style="margin-top: 80px">
+    <div class="container-fluid">
+
+        <div class="col-sm-3 col-sm-offset-2">
+            <img src="img/new4.png">
+        </div>
+        <div class="col-sm-5 ">
+            <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</a></h4>
+            <p style="color: #5b5b5b;font-size: 14px">
+                今天其它评论热爆的话题是：“唐山的电动自行车要上牌照了？你关心的信息全在这！”。
+                河北省公安厅交通管理局副调研员吴冀徽介绍，该项立法工作会涉及到三大制度：登记制度、公告目录制度和过渡期制度。
+                “河北省内电动自行车是否上牌照是登记制度中的内容，目前还并未确定，所以现在也在向大家征求意见...
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class=" new-main" style="margin-top: 80px;margin-bottom: 80px">
+    <div class="container-fluid">
+
+        <div class="col-sm-3 col-sm-offset-2">
+            <img src="img/new5.png">
+        </div>
+        <div class="col-sm-5 ">
+
+            <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">全球首款商业化的氢能源电动自行车法国上路</a></h4>
+            <p style="color: #5b5b5b;font-size: 14px">
+                充电两分钟，续航100公里。正是上边这款氢能源电动自行车。
+                据外媒消息，近日位于法国下诺曼底大区的圣洛市政府宣布，第一批氢能源电动自行车在当地投入使用。
+                这款自行车由法国普拉格马工业公司设计生产，这也是世界上首款商业化的氢能源电动自行车...
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="container" >
+    <div style="width: 100%;background-color: #f8f8f8;height: 50px;margin-bottom: 60px;text-align: center;">
+<h4 style="padding-top: 15px;color: #5a5a5a;font-size: 16px">加载更多</h4>
+    </div>
+
+</div>
+<!--新闻-->
+
+<!--footer-->
+<div id="footer" style="background-color: #f2f2f2">
+    <div class="container" >
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a href="solution.html#skip3">共享出行</a></li>
+                        <li><a href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="aboutus.html#skip">联系我们</a></li>
+                        <li><a href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #5b5b5b">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p>微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container" style="color: #f2f2f2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("current").style.color="#ffcc66";
+    document.getElementById("current").style.borderBottom="2px solid #ffcc66";
+    document.getElementById("current").style.paddingBottom="20px ";
+    document.getElementById("sjactive").style.color="#4B4C8F";
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>

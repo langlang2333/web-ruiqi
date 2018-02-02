@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+
+    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
+    <title>技术支持</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<!-- 导航条 -->
+
+<header>
+
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 0;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;">
+                    <li><a style="text-shadow: none" href="index.html" >首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html" >新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="#" id="current">技术支持</a></li>
+                    <li><a style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" id="sjactive">技术支持</a></span>
+    </div>
+</div>
+<!-- 导航条 -->
+<!-- banner -->
+<div class="banner-sup" style="background: url(img/zhichi-banner.png);background-size: 100% 100%;padding-bottom: 100px">
+    <div class="container">
+        <div class="row" style="margin-left: 1px">
+
+
+            <h1 class="banner-title-y" >技术支持</h1>
+            <p class="banner-p-y" >
+                TECHNICAL SUPPORT</p>
+
+        </div>
+    </div>
+</div>
+<!-- banner -->
+
+<!-- wenjian -->
+<div class="index-row our-example" style="background-color: #f5f5f5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 doc-box" >
+                <div class="docmokuai">
+                    <div class="col-sm-6 col-xs-6">
+                        <h3 class="title-doc">SmartEngine智擎车载系统
+                        技术文档</h3>
+                        <button class="downlo"><span style="content: url(img/down.png);vertical-align: -6px;"></span> 下载附件</button>
+                    </div>
+                    <div class="col-sm-6 col-xs-6" style="margin-top: 20px">
+                        <img src="img/jishuwend.png">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="col-sm-4 doc-box" >
+                <div class="docmokuai">
+                    <div class="col-sm-6 col-xs-6">
+                    <h3 class="title-doc">SmartEV车精灵平台
+                        操作手册</h3>
+                        <button class="downlo"><span style="content: url(img/down.png);vertical-align: -6px;"></span> 下载附件</button>
+                    </div>
+                    <div class="col-sm-6 col-xs-6" style="margin-top: 20px">
+                        <img src="img/pdftb.png">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4 doc-box" >
+                <div class="docmokuai">
+                    <div class="col-sm-6 col-xs-6">
+                    <h3 class="title-doc">轻智能中控RK4300介绍</h3>
+                        <button class="downlo"><span style="content: url(img/down.png);vertical-align: -6px;"></span> 下载附件</button>
+                    </div><div class="col-sm-6 col-xs-6" style="margin-top: 20px">
+                    <img src="img/pdftb.png">
+                </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-4 doc-box">
+                <div class="docmokuai">
+                    <div class="col-sm-6 col-xs-6">
+                    <h3 class="title-doc">骑多多APP操作说明</h3>
+                        <button class="downlo"><span style="content: url(img/down.png);vertical-align: -6px;"></span> 下载附件</button>
+                    </div>
+                    <div class="col-sm-6 col-xs-6" style="margin-top: 20px">
+                        <img src="img/pptdoc.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- wenjian -->
+
+<!--footer-->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a href="solution.html#skip3">共享出行</a></li>
+                        <li><a href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="aboutus.html#skip">联系我们</a></li>
+                        <li><a href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #5b5b5b">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p>微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("current").style.color="#ffcc66";
+    document.getElementById("current").style.borderBottom="2px solid #ffcc66";
+    document.getElementById("current").style.paddingBottom="20px ";
+    document.getElementById("sjactive").style.color="#4B4C8F";
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>

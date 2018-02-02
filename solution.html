@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+
+    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
+    <title>解决方案</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<!-- 导航条 -->
+
+<header>
+
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 0;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;">
+                    <li><a style="text-shadow: none" href="index.html" >首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="#" id="current">解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html" >新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" id="sjactive">解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
+<!-- 导航条 -->
+<!-- banner -->
+<div class="banner-solu" style="background: url(img/fanganbanner.png);background-size: cover;padding-bottom: 150px">
+    <div class="container">
+        <div class="row" style="margin-left: 1px">
+
+
+            <h1 class="banner-title" style="text-align: center;margin-bottom: 40px;font-size: 32px">Rokyinfo专注于为两轮电动车行业的商业客户<br/>
+                提供高质量的软硬件服务</h1>
+            <p class="banner-p" style="text-align: center;font-size: 15px;font-family: '等线 Light';">
+                主要包括生产厂家、电动共享出行集团客户、外卖行业集团客户和旅游景区校园集团客户等。类似安卓智能机体系的Google，
+                为手机品牌厂商提供Android系统，Rokyinfo提供电动车的智能软件系统和最小化标准硬件作为软件载体，
+                使得企业能够以最低成本在数周时间内完成产品的智能化升级，同时赋予企业智慧云平台建设，管理和运营，
+                客户大数据分析能力。客户的商业成功是我们的最大愿望，我们是两轮电动车行业的幕后英雄。</p>
+
+        </div>
+    </div>
+</div>
+<!-- banner -->
+
+<!-- 解决方案 -->
+
+<div class="index-row solution" style="background-color: #2ba7a6;    padding: 30px 0">
+    <div style="width: 100%;height: 110px;z-index: 10;background-color: #219493;">
+        <a name="skip3"></a>
+        <div id="top" class="top" >
+            <ul class="container">
+
+                <li id="content1" onclick="show1()" class="content col-4 col-md-4">
+                    <div class="wrapper"><p class="wrapper-title">生产厂家 - 智能电动车系统解决方案</p></div>
+                </li>
+                <li id="content2" onclick="show2()" class="content col-4 col-md-4">
+                    <div class="wrapper"><p class="wrapper-title">共享出行—智能电动车系统解决方案</p></div>
+                </li>
+                <li id="content3" onclick="show3()" class="content col-4 col-md-4">
+                    <div class="wrapper"><p class="wrapper-title">外卖行业—智能电动车系统解决方案</p></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="wrap1" class="onemodule middle-item" style="display: block;margin-top: 50px;height: 611px">
+        <div class="zero">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-6 ">
+                    <img  src="img/fangan1.png">
+
+                </div>
+
+                <div class="col-sm-6 " style="padding-left: 80px;">
+                    <h4 class="huanjie" >1. 生产环节</h4>
+                        <p style="font-size: 14px;color: white;line-height: 25px">14Pin接口设计，多线束规格选择，支持标准化生产<br/>
+                        整体灌胶工艺，达到IP67防水防尘等级<br/>
+                        BLE4.1蓝牙和GPRS无线网络双通道、自动无感切换<br/>
+                        支持无线数据传输，车辆数据实时更新</p>
+                    <h4 class="huanjie">2. 用户环节</h4>
+                    <p style="font-size: 14px;color: white;line-height: 25px">GPS和北斗双星，定位更精准，实时掌控车辆位置<br/>
+                        使用APP，实现开启、关闭、设防撤防、开启鞍座锁等远程操控<br/>
+                        车辆故障信息、车况安全，APP随时提醒</p>
+                    <h4 class="huanjie">3. 运营环节</h4>
+                    <p style="font-size: 14px;color: white;line-height: 25px">用户数据提纯，勾勒消费者画像<br/>
+                        车辆数据监控，掌握车辆活跃度及状态<br/>
+                        销售数据分析，为规划销售渠道及市场策略提供支持<br/>
+                        二次营销和增值服务</p>
+                    <h4 class="huanjie">4. 售后服务环节</h4>
+                    <p style="font-size: 14px;color: white;line-height: 25px">远程诊断<br/>
+                        线下人员调度优化</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="wrap2" class="twomodule" style="display: none;margin-top: 50px;height: 611px">
+        <div class="zero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <img  src="img/fangan2.png">
+
+                    </div>
+
+                    <div class="col-sm-6 " style="padding-left: 80px;">
+                        <h4 class="huanjie" style="margin-top: 80px" >1. 用户环节</h4>
+                        <p style="font-size: 14px;color: white;line-height: 25px">搜索附近车辆，APP一键租车及还车<br/>
+                            车辆电池用量提醒，就近推荐充电桩或电池柜</p>
+                        <h4 class="huanjie">2. 运营环节</h4>
+                        <p style="font-size: 14px;color: white;line-height: 25px">车辆位置及活跃度监控<br/>
+                            车辆状况监督，健康自测<br/>
+                            最新优惠信息提醒，增加用户粘度</p>
+
+                        <h4 class="huanjie">4. 增值服务环节</h4>
+                        <p style="font-size: 14px;color: white;line-height: 25px">广告运营收益，提升用户好感度</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="wrap3" class="theremodule" style="display: none;margin-top: 50px;height: 611px">
+        <div class="zero">
+            <div class="container">
+                <div class="row" style="margin-top: 50px">
+                    <div class="col-sm-4 " style="text-align: center">
+                        <img  src="img/fatb1.png">
+                        <h4 class="huanjie3">车辆使用情况提醒</h4>
+
+                    </div>
+                    <div class="col-sm-4 " style="text-align: center">
+                        <img style="margin-top: 10px" src="img/fatb2.png">
+                        <h4 class="huanjie3">用户换电操作</h4>
+
+                    </div>
+                    <div class="col-sm-4 " style="text-align: center">
+                        <img  src="img/fatb3.png">
+                        <h4 class="huanjie3">业务运营平台</h4>
+
+                    </div>
+                    <div class="col-sm-12 " style="text-align: center">
+                        <h4 class="huanjie" style="line-height: 30px;margin-top: 100px">骑行过程中，电量随时提醒<br/>
+                            推荐就近充电柜，轻松换电，外卖无忧</h4>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 解决方案 -->
+
+<!-- why -->
+<div class="index-row our-example" style="background-color: white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 main-title">
+                <h2 class="title-big" style="letter-spacing: 3px;font-size: 37px">为什么选择Rokyinfo</h2>
+
+
+
+                <h4 class="midwenzi" style="font-size: 14px;color: #5b5b5b">
+                    专业服务商，支持众多业务场景，智能设备与硬件无缝对接一体化生产出厂，标准化系统常年充分测试久经考验。帮助解决企业软件开发团队缺乏，智能硬件行业生疏，整合后产品无力全面多路况多季节充分路试不敢大货生产等最常见的问题。
+                </h4>
+
+            </div>
+
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="tedian" style="background-color: #f2f2f2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 our-example-box">
+                <div class="sixmokuai">
+                    <span style="content: url(img/why1.png);width: auto;height:100px"></span>
+                    <h3 class="green-title">专业智能车方案提供商</h3>
+                    <p style="font-size:0.9em">多年以来，我们专注于做两轮电动车的智慧方案提供商，心无旁骛，细分领域极致运作</p>
+                </div>
+
+            </div>
+            <div class="col-sm-3 our-example-box">
+                <div class="sixmokuai">
+                    <span style="content: url(img/why2.png);width: auto;height:100px"></span>
+                    <h3 class="green-title">业务场景精确匹配</h3>
+                    <p style="font-size:0.9em">累计服务行业主流客户超过50家，行业流程不但烂熟于心，更是融会贯通，能根据具体业务场景，为客户提供最契合和优化的解决方案</p>
+                </div>
+
+            </div>
+            <div class="col-sm-3 our-example-box">
+                <div class="sixmokuai">
+                    <span style="content: url(img/why4.png);width: auto;height:100px"></span>
+                    <h3 class="green-title">极低的开发成本</h3>
+                    <p style="font-size:0.9em">智能设备全部产品化，无形软件成为标品，通过EMC检测，支持不同品牌的标准化生产；硬件接入后，大数据平台自动完成分析，无需二次开发</p>
+                </div>
+
+            </div>
+            <div class="col-sm-3 our-example-box">
+                <div class="sixmokuai">
+                    <span style="content: url(img/why3.png);width: auto;height:100px"></span>
+                    <h3 class="green-title">专业团队极速响应</h3>
+                    <p style="font-size:0.9em">客户有问题，服务团队极速响应是我们的标准流程，能真正降低企业的时间和资金成本，伴随客户一起成长</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="hidden-xs" style="height: 30px"></div>
+<!-- why -->
+
+<!--footer-->
+<div id="footer" style="background-color: #4b4c8f">
+    <div class="container" >
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a style="color:#9fa1d7" href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a style="color:#9fa1d7" href="solution.html#skip3">共享出行</a></li>
+                        <li><a style="color:#9fa1d7" href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a style="color:#9fa1d7" href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a style="color:#9fa1d7" href="aboutus.html">关于我们</a></li>
+                        <li><a style="color:#9fa1d7" href="aboutus.html#skip">联系我们</a></li>
+                        <li><a style="color:#9fa1d7" href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #9fa1d7">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p style="color:#9fa1d7">微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright" style="background-color: #454784">
+        <div class="container" style="color: #f2f2f2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="color:#9fa1d7">© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function show1() {
+        document.getElementById("wrap1").style.display="block";
+        document.getElementById("wrap2").style.display="none";
+        document.getElementById("wrap3").style.display="none";
+    }
+    function show2() {
+        document.getElementById("wrap2").style.display="block";
+        document.getElementById("wrap1").style.display="none";
+        document.getElementById("wrap3").style.display="none";
+    }
+    function show3() {
+        document.getElementById("wrap3").style.display="block";
+        document.getElementById("wrap2").style.display="none";
+        document.getElementById("wrap1").style.display="none";
+    }
+
+
+    $(document).ready(function(e) {
+
+        $(".content").first().addClass("content_Sty");//第一个按钮默认选中效果，也可以在下面代码上第一个按钮加calss=“content_Sty”;
+        $(".content").click(function(){  //点击下面的按钮触发事件;
+
+//this = 当前点击的哪一个按钮         //siblings意思的同级其他元素式
+            $(this).addClass("content_Sty").siblings().removeClass("content_Sty");
+        })    //addClass添加背景样式("content_Sty") //removeClass移除背景样式("content_Sty");
+    });
+
+    document.getElementById("current").style.color="#ffcc66";
+    document.getElementById("current").style.borderBottom="2px solid #ffcc66";
+    document.getElementById("current").style.paddingBottom="20px ";
+
+    document.getElementById("sjactive").style.color="#4B4C8F";
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>
