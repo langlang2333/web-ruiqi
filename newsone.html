@@ -35,10 +35,96 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
     <title>电动单车公共充电服务迎风口？</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
 </head>
 <body>
+
+<header>
+
+    <nav  class="navbar navbar-fixed-top my-navbar" role="navigation" >
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 0;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px;">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;">
+                    <li><a style="text-shadow: none" href="index.html">首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
 <!-- banner -->
-<div class="banner-news1" style="background-color:#4b4c8f;padding-bottom: 70px">
+<div class="banner-news1 hidden-xs" style="background-color:#4b4c8f;padding-bottom: 70px">
 
 </div>
 <!-- banner -->
@@ -77,7 +163,7 @@
 <!--新闻主体-->
 
 <!--footer-->
-<div id="footer">
+<div id="footer" class="hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-2 footer-item">
@@ -140,6 +226,24 @@
         </div>
     </div>
 </div>
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
 
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 50px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+    </div>
+</div>
+
+<script>
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
 </body>
 </html>

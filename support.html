@@ -37,6 +37,9 @@
     <title>技术支持</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
     </style>
     <script>
 
@@ -112,11 +115,11 @@
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
     <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
-        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html" >首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
-        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" id="sjactive">技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" id="sjactive">技术支持</a></span>
     </div>
 </div>
 <!-- 导航条 -->
@@ -202,7 +205,7 @@
 <!-- wenjian -->
 
 <!--footer-->
-<div id="footer">
+<div id="footer" class="hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-2 footer-item">
@@ -263,6 +266,16 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f;margin-top: 0;">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 50px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 <script>

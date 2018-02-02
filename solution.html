@@ -37,6 +37,9 @@
     <title>解决方案</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
     </style>
     <script>
 
@@ -112,9 +115,9 @@
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
     <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
-        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html" >首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
-        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" id="sjactive">解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" id="sjactive">解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
     </div>
@@ -126,14 +129,17 @@
         <div class="row" style="margin-left: 1px">
 
 
-            <h1 class="banner-title" style="text-align: center;margin-bottom: 40px;font-size: 32px">Rokyinfo专注于为两轮电动车行业的商业客户<br/>
+            <h1 class="banner-titles" >Rokyinfo专注于为两轮电动车行业的商业客户<br/>
                 提供高质量的软硬件服务</h1>
-            <p class="banner-p" style="text-align: center;font-size: 15px;font-family: '等线 Light';">
+            <p class="banner-p hidden-xs" style="text-align: center;font-size: 15px;font-family: '等线 Light';">
                 主要包括生产厂家、电动共享出行集团客户、外卖行业集团客户和旅游景区校园集团客户等。类似安卓智能机体系的Google，
                 为手机品牌厂商提供Android系统，Rokyinfo提供电动车的智能软件系统和最小化标准硬件作为软件载体，
                 使得企业能够以最低成本在数周时间内完成产品的智能化升级，同时赋予企业智慧云平台建设，管理和运营，
                 客户大数据分析能力。客户的商业成功是我们的最大愿望，我们是两轮电动车行业的幕后英雄。</p>
-
+            <p class="line line-big bannerline" style="border-top: 1px solid white;    border-width: 2px;width: 50px"></p>
+            <p class="banner-p2" style="text-align: center;font-size: 18px;font-family: 微软雅黑;">
+            Rokyinfo提供电动车的智能软件系统和最小化标准硬件作为软件载体，使得企业能够以最低成本在数周时间内完成产品的智能化升级，同时赋予企业智慧云平台建设，管理和运营，客户大数据分析能力。
+            </p>
         </div>
     </div>
 </div>
@@ -147,13 +153,13 @@
         <div id="top" class="top" >
             <ul class="container">
 
-                <li id="content1" onclick="show1()" class="content col-4 col-md-4">
+                <li id="content1" onclick="show1()" class="content col-4 col-md-4 col-xs-4">
                     <div class="wrapper"><p class="wrapper-title">生产厂家 - 智能电动车系统解决方案</p></div>
                 </li>
-                <li id="content2" onclick="show2()" class="content col-4 col-md-4">
+                <li id="content2" onclick="show2()" class="content col-4 col-md-4 col-xs-4">
                     <div class="wrapper"><p class="wrapper-title">共享出行—智能电动车系统解决方案</p></div>
                 </li>
-                <li id="content3" onclick="show3()" class="content col-4 col-md-4">
+                <li id="content3" onclick="show3()" class="content col-4 col-md-4 col-xs-4">
                     <div class="wrapper"><p class="wrapper-title">外卖行业—智能电动车系统解决方案</p></div>
                 </li>
 
@@ -161,16 +167,16 @@
         </div>
     </div>
 
-    <div id="wrap1" class="onemodule middle-item" style="display: block;margin-top: 50px;height: 611px">
+    <div id="wrap1" class="onemodule middle-item" style="display: block;margin-top: 50px;">
         <div class="zero">
             <div class="container">
                 <div class="row">
                 <div class="col-sm-6 ">
-                    <img  src="img/fangan1.png">
+                    <img class="solupic" src="img/fangan1.png">
 
                 </div>
 
-                <div class="col-sm-6 " style="padding-left: 80px;">
+                <div class="col-sm-6 solu-1">
                     <h4 class="huanjie" >1. 生产环节</h4>
                         <p style="font-size: 14px;color: white;line-height: 25px">14Pin接口设计，多线束规格选择，支持标准化生产<br/>
                         整体灌胶工艺，达到IP67防水防尘等级<br/>
@@ -194,16 +200,16 @@
         </div>
 
     </div>
-    <div id="wrap2" class="twomodule" style="display: none;margin-top: 50px;height: 611px">
+    <div id="wrap2" class="twomodule" style="display: none;margin-top: 50px;">
         <div class="zero">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-top: 32px;margin-bottom: 32px">
                     <div class="col-sm-6 ">
-                        <img  src="img/fangan2.png">
+                        <img class="solupic" src="img/fangan2.png">
 
                     </div>
 
-                    <div class="col-sm-6 " style="padding-left: 80px;">
+                    <div class="col-sm-6 solu-1" >
                         <h4 class="huanjie" style="margin-top: 80px" >1. 用户环节</h4>
                         <p style="font-size: 14px;color: white;line-height: 25px">搜索附近车辆，APP一键租车及还车<br/>
                             车辆电池用量提醒，就近推荐充电桩或电池柜</p>
@@ -220,10 +226,11 @@
         </div>
 
     </div>
-    <div id="wrap3" class="theremodule" style="display: none;margin-top: 50px;height: 611px">
+    <div id="wrap3" class="theremodule" style="display: none;margin-top: 50px;">
         <div class="zero">
             <div class="container">
-                <div class="row" style="margin-top: 50px">
+                <div class="row" style="margin-top: 150px;
+    margin-bottom: 60px;">
                     <div class="col-sm-4 " style="text-align: center">
                         <img  src="img/fatb1.png">
                         <h4 class="huanjie3">车辆使用情况提醒</h4>
@@ -240,7 +247,7 @@
 
                     </div>
                     <div class="col-sm-12 " style="text-align: center">
-                        <h4 class="huanjie" style="line-height: 30px;margin-top: 100px">骑行过程中，电量随时提醒<br/>
+                        <h4 class="huanjie" style="line-height: 30px;margin-top: 100px;color: white">骑行过程中，电量随时提醒<br/>
                             推荐就近充电柜，轻松换电，外卖无忧</h4>
 
                     </div>
@@ -280,7 +287,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-3 our-example-box">
+            <div class="col-sm-3 col-xs-6 our-example-box">
                 <div class="sixmokuai">
                     <span style="content: url(img/why1.png);width: auto;height:100px"></span>
                     <h3 class="green-title">专业智能车方案提供商</h3>
@@ -288,15 +295,16 @@
                 </div>
 
             </div>
-            <div class="col-sm-3 our-example-box">
+            <div class="col-sm-3 col-xs-6 our-example-box">
                 <div class="sixmokuai">
                     <span style="content: url(img/why2.png);width: auto;height:100px"></span>
                     <h3 class="green-title">业务场景精确匹配</h3>
-                    <p style="font-size:0.9em">累计服务行业主流客户超过50家，行业流程不但烂熟于心，更是融会贯通，能根据具体业务场景，为客户提供最契合和优化的解决方案</p>
+                    <p class="solu-p1" style="font-size:0.9em">累计服务行业主流客户超过50家，行业流程不但烂熟于心，更是融会贯通，能根据具体业务场景，为客户提供最契合和优化的解决方案</p>
+                    <p class="solu-p" style="font-size:0.9em">累计服务行业主流客户超过50家，能根据具体业务场景，为客户提供最契合和优化的解决方案</p>
                 </div>
 
             </div>
-            <div class="col-sm-3 our-example-box">
+            <div class="col-sm-3 col-xs-6 our-example-box">
                 <div class="sixmokuai">
                     <span style="content: url(img/why4.png);width: auto;height:100px"></span>
                     <h3 class="green-title">极低的开发成本</h3>
@@ -304,7 +312,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-3 our-example-box">
+            <div class="col-sm-3 col-xs-6 our-example-box">
                 <div class="sixmokuai">
                     <span style="content: url(img/why3.png);width: auto;height:100px"></span>
                     <h3 class="green-title">专业团队极速响应</h3>
@@ -325,7 +333,7 @@
 <!-- why -->
 
 <!--footer-->
-<div id="footer" style="background-color: #4b4c8f">
+<div id="footer" style="background-color: #4b4c8f" class="hidden-xs">
     <div class="container" >
         <div class="row">
             <div class="col-xs-6 col-sm-2 footer-item">
@@ -386,6 +394,16 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f;    margin-top: 0px;">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 50px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 <script>

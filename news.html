@@ -37,6 +37,9 @@
     <title>新闻动态</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
     </style>
     <script>
 
@@ -79,7 +82,7 @@
         <div class="container">
             <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                <button type="button" class="navbar-toggle"  data-toggle="collapse"
                         onclick="zhankai()">
                     <span class="sr-only">切换导航</span>
                     <span class="icon-bar"></span>
@@ -112,17 +115,17 @@
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
     <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
-        <span class="sp"><a style="text-shadow: none;color: black" href="#" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html" >首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
-        <span class="sp"><a style="text-shadow: none;color: black" href="news.html" id="sjactive">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="#" id="sjactive">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
     </div>
 </div>
 <!-- 导航条 -->
 <!-- banner -->
 <div class="banner-sup" style="background: url(img/banner-news.png);background-size: 100% 100%;padding-bottom: 100px">
-    <div class="container">
+    <div class="container news">
         <div class="row" style="margin-left: 1px">
 
 
@@ -140,7 +143,7 @@
     <div class="container-fluid">
 
     <div class="col-sm-3 col-sm-offset-2">
-        <img src="img/new1.png">
+        <img class="newspic" src="img/new1.png">
     </div>
     <div class="col-sm-5 ">
         <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="newsone.html">电动单车公共充电服务迎风口？</a></h4>
@@ -157,7 +160,7 @@
     <div class="container-fluid">
 
         <div class="col-sm-3 col-sm-offset-2">
-            <img src="img/new2.png">
+            <img class="newspic" src="img/new2.png">
         </div>
         <div class="col-sm-5 ">
             <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">2018 CES：极客必备 Ujet智慧电动单车</a></h4>
@@ -174,7 +177,7 @@
     <div class="container-fluid">
 
         <div class="col-sm-3 col-sm-offset-2">
-            <img src="img/new3.png">
+            <img class="newspic" src="img/new3.png">
         </div>
         <div class="col-sm-5 ">
             <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">电动自行车或将实名上牌!(含1月10日限行信息)</a></h4>
@@ -192,7 +195,7 @@
     <div class="container-fluid">
 
         <div class="col-sm-3 col-sm-offset-2">
-            <img src="img/new4.png">
+            <img class="newspic" src="img/new4.png">
         </div>
         <div class="col-sm-5 ">
             <h4 style="font-weight: 500;margin-top: 30px"><a style="color: black" href="#">唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</a></h4>
@@ -209,7 +212,7 @@
     <div class="container-fluid">
 
         <div class="col-sm-3 col-sm-offset-2">
-            <img src="img/new5.png">
+            <img class="newspic" src="img/new5.png">
         </div>
         <div class="col-sm-5 ">
 
@@ -232,7 +235,7 @@
 <!--新闻-->
 
 <!--footer-->
-<div id="footer" style="background-color: #f2f2f2">
+<div id="footer" style="background-color: #f2f2f2" class="hidden-xs">
     <div class="container" >
         <div class="row">
             <div class="col-xs-6 col-sm-2 footer-item">
@@ -293,6 +296,16 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 50px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 

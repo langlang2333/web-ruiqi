@@ -177,7 +177,7 @@ a:focus{
     background-color: rgba(255,255,255,0);
 }
 #header .navbar-default .navbar-toggle .icon-bar{
-    background-color: none;
+
 }
 #header .navbar-default .navbar-nav>li .line-top{
     border-top: 1px solid #0ba1e4;
@@ -344,7 +344,7 @@ a:focus{
     height: 48px;
     border: 1px solid #0ba1e4;
     background-color: #f5f5f5;
-    background-image: url(../images/icons/clan-slider.png);
+
     background-repeat: no-repeat;
 }
 
@@ -684,7 +684,7 @@ a:focus{
     white-space: nowrap;
 }
 .position-icon {
-    background-image: url(../images/icons/position-icon.svg);
+
     background-repeat: no-repeat;
     background-size: 10px 10px;
     width: 10px;
@@ -699,7 +699,7 @@ a:focus{
 }
 
 .glly-icon{
-    background-image: url(../images/icons/yhgl-icon.svg);
+
     background-repeat: no-repeat;
     background-size: 70px 70px;
     width: 70px;
@@ -782,7 +782,7 @@ a:focus{
     height: 10px;
     background-position: -131px -58px;
     margin: 4px 5px 0 0;
-    background-image: url(../images/icons/glob-pic.png);
+
     background-repeat: no-repeat;
 }
 
@@ -1192,18 +1192,7 @@ border: none;
     background-color: #f93;
     color: #fff;
 }
-.service-item .quancheng{
-    background-image: url(../images/quancheng.png);
-    background-repeat: no-repeat;
-}
-.service-item .liucheng{
-    background-image: url(../images/liucheng.png);
-    background-repeat: no-repeat;
-}
-.service-item .zhoubian{
-    background-image: url(../images/zhoubian.png);
-    background-repeat: no-repeat;
-}
+
 
 
 @media (max-width: 767px){
@@ -1279,7 +1268,7 @@ border: none;
     background:#f9f9f9;
     color: #919191;
     font-size: 14px;
-    background-image: url(../images/icons/quote-left.png);
+
     background-position: top left;
     background-repeat: no-repeat;
     text-indent: 2em;
@@ -1289,7 +1278,7 @@ border: none;
     padding-right: 20px;
     padding-bottom: 10px;
     line-height: 2em;
-    background-image: url(../images/icons/quote-right.png);
+
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -1535,7 +1524,7 @@ border: none;
 }
 
 .urgent-chat{
-    background-image: url(../images/urgent_chat.jpg);
+
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -1662,6 +1651,7 @@ html, body{
     font-weight: 600;
     color: #edc852;
     letter-spacing:6px;
+    font-size: 37px;
 }
 .midwenzi{
     color: white;
@@ -1729,6 +1719,18 @@ html, body{
     text-align: center;
     margin-top: 200px;
 }
+
+.banner-titles{
+    margin-bottom: 40px;
+    font-size: 32px;
+
+    color: white;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 200px;
+}
 .banner-p{
     font-size: 16px;
     font-family: "微软雅黑";
@@ -1747,6 +1749,25 @@ html, body{
     margin-top: 10px;
     text-align: center;
     letter-spacing: 2px;
+}
+.banner-p3{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.banner-p4{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    line-height: 30px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }
 .title-mid{
     color: white;
@@ -1768,8 +1789,8 @@ html, body{
 
 .my-navbar a {transition: color 0.2s ease-in-out;}/*-webkit-transition ;-moz-transition*/
 .top-nav {padding:0;background:#000;}
-button.navbar-toggle {background-color:#fbfbfb;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
-button.navbar-toggle > span.icon-bar {background-color:#dedede}
+button.navbar-toggle {background-color:transparent;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
+button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 
 @media (max-width: 767px){
     .my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; background:white;!important;
@@ -1941,7 +1962,7 @@ margin-top: 35px}
 }
 .upNav {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-color: #fff;
     position: fixed;
     z-index: 999;
@@ -1952,12 +1973,168 @@ margin-top: 35px}
 }
 .sp {
     display: inline-block;
-    width: 90%;
+    width: 100%;
     height: 60px;
-    margin-left: 5%;
-    line-height: 50px;
+    padding-left: 5%;
+    line-height: 60px;
     border-bottom: 1px solid #f5f5f5;
     text-align: left;
     font-weight: 500;
 
+}
+.weichat{
+
+    display: none;
+    margin-top: 30px;
+
+}
+
+.youwenzi{
+    font-size: 15px;
+}
+.banner-p2{
+    display: none;
+}
+.bannerline{
+    display: none;
+}
+.solu-p{
+    display: none;
+}
+.banner-abu{
+    background: url(../img/aboutbanner.png);
+    background-size: 100% 100%;
+    height: 500px
+}
+.banner-jiaru{
+    background: url(../img/banner-join.png);
+    background-size: 100% 100%;
+}
+.sjlianxi{
+    display: none;
+}
+.jiaru{
+    padding-bottom: 80px;
+}
+.banner-title3{
+    display: none;
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 200px;
+    line-height: 45px;
+}
+.bn-2{
+    height:850px;
+    background: url(../img/banner2.png);
+    background-size: cover
+}
+.bn-3{
+    height:850px;
+    background: url(../img/banner3.png);
+    background-size: cover
+}
+.banner-title4{
+    display: none;
+    color: white;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 200px;
+}
+.solu-1{padding-left: 80px;}
+@media (max-width: 767px) {
+    .weichat{
+
+      display: block;
+
+    }
+    .copyright{
+
+        display: none;
+
+    }
+    .youwenzi{
+        font-size: 12px;
+    }
+    .news{
+        text-align: center;
+    }
+    .newspic{
+        width: 100%;
+    }
+    .banner-titles{
+        font-size: 25px;
+    }
+    .banner-p2{
+        display: block;
+    }
+    .bannerline{
+        display: block;
+    }
+    .wrapper-title{
+        font-size: 12px;
+    }
+    .solupic{
+        width: 100%;
+    }
+    .solu-p{
+        display: block;
+    }
+    .solu-p1{
+        display: none;
+    }
+    .solu-1{padding-left: 15px;}
+    .huanjie{
+        color: #4b4c8f;
+    }
+    .banner-abu{
+        background: url(../img/bannerabusj.png);
+        background-size: 100% 100%;
+        height: 400px;
+    }
+    .map{
+        width: 100%;
+    }
+    .sjlianxi{
+        display: block;
+    }
+    .jiaru{
+        padding-bottom: 20px;
+    }
+    .banner-jiaru{
+        background: url(../img/jiarusj.png);
+        background-size: 100% 100%;
+        height: 400px;
+
+    }
+    .banner-title3{
+        display: block;
+    }
+    .bn-2{
+        height:850px;
+        background: url(../img/banner2sj.png);
+        background-size: cover;
+    }
+    .bn-3{
+        height:850px;
+        background: url(../img/banner3sj.png);
+        background-size: cover;
+    }
+    .apppic{
+        width: 100%;
+    }
+    .title-big{
+        font-size: 30px;
+    }
+    .banner-title4{
+        display: block;
+    }
+    .banner-p4{
+        font-size: 16px;
+    }
 }

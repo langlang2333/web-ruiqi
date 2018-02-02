@@ -35,10 +35,98 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
     <title>关于锐祺</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
 </head>
 <body>
+<!-- 导航条 -->
+
+<header>
+
+    <nav  class="navbar navbar-fixed-top my-navbar" role="navigation" >
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 0;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px;">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;">
+                    <li><a style="text-shadow: none" href="index.html">首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html" >首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
+<!-- 导航条 -->
 <!-- banner -->
-<div class="banner-sup" style="background: url(img/aboutbanner.png);background-size: 100% 100%;height: 500px">
+<div class="banner-abu" >
 
 </div>
 <!-- banner -->
@@ -68,7 +156,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="col-sm-4 pic-box" style="background-color: #e5e5e5 ;padding-left: 0;
+    <div class="col-sm-4 col-xs-6 pic-box" style="background-color: #e5e5e5 ;padding-left: 0;
     padding-right: 0;">
         <div class="sixmokuai">
             <img style="width: 100%" src="img/about-1.png">
@@ -76,14 +164,14 @@
         </div>
 
     </div>
-    <div class="col-sm-4 pic-box" style="background-color: #d9d9d9; padding-left: 0;
+    <div class="col-sm-4 col-xs-6 pic-box" style="background-color: #d9d9d9; padding-left: 0;
     padding-right: 0;">
         <div class="sixmokuai">
             <img style="width: 100%" src="img/about-2.png">
         </div>
 
     </div>
-    <div class="col-sm-4 pic-box" style="background-color: #bfbfbf; padding-left: 0;
+    <div class="col-sm-4 pic-box hidden-xs" style="background-color: #bfbfbf; padding-left: 0;
     padding-right: 0;">
         <div class="sixmokuai">
             <img style="width: 100%" src="img/about-3.png">
@@ -96,11 +184,11 @@
 
 <!-- 联系我们 -->
 <a name="skip"></a>
-<div class="col-sm-6" style="background-color: #2ba7a6 ;padding-left: 0;
+<div class="col-sm-6 hidden-xs" style="background-color: #2ba7a6 ;padding-left: 0;
     padding-right: 0;height: 500px">
-    <div class="col-sm-6 col-sm-offset-6" style="margin-top: 120px;padding-bottom: 100px">
+    <div class="col-sm-6 col-sm-offset-6 hidden-xs" style="margin-top: 120px;padding-bottom: 100px">
 <h3 style="color: white;">联系我们</h3>
-        <p class="line-little" style="text-align: left"></p>
+        <p class="line line-little" style="text-align: left"></p>
         <div class="col-sm-12" style="padding-left: 0">
         <p style="font-size: 14px;color: white;line-height: 30px">
         电话：0510-85110586<br/>
@@ -111,9 +199,27 @@
         </div>
     </div>
 </div>
-<div class="col-sm-6" style="background-color: #d9d9d9; padding-left: 0;
+
+<div class="col-sm-6 col-xs-12" style="background-color: #d9d9d9; padding-left: 0;
     padding-right: 0;overflow: hidden">
-<img style="height:100%;" src="img/map.png">
+<img class="map" style="height:100%;" src="img/map.png">
+
+</div>
+
+<div class="col-xs-12 sjlianxi" style="background-color: #2ba7a6 ;padding-left: 0;
+    padding-right: 0;height: 350px">
+    <div class="col-xs-12" style="margin-top: 30px;padding-bottom: 50px">
+        <h3 style="color: white;">联系我们</h3>
+        <p class="line line-little" style="text-align: left"></p>
+        <div class="col-xs-12" style="padding-left: 0">
+            <p  style="font-size: 14px;color: white;line-height: 30px">
+                电话：0510-85110586<br/>
+                地址：江苏省无锡市国家工业设计园建筑西路
+                <br/>599号3幢7楼<br/>
+                邮箱：support@rokyinfo.com<br/>
+            </p>
+        </div>
+    </div>
 
 </div>
 <!-- 联系我们 -->
@@ -122,27 +228,27 @@
 
 <div  style="text-align: center;font-size: 16px;background-color: white">
     <div class="container">
-        <div class="col-sm-6 col-sm-offset-3" style="margin-top: 80px">
-    <p>加入Rokyinfo，就是你的无限可能。<br/>
+        <div class="col-sm-6 col-sm-offset-3" >
+    <p style="margin-top: 80px">加入Rokyinfo，就是你的无限可能。<br/>
 智能正在改变你的工作，成为竞争力的核心。<br/>
         这里是一个崭新的商业平台，成就你一生的事业，成就最好的你。</p>
-    <p class="line line-big" style="padding-bottom: 80px; border-top: 2px solid #949494;"></p>
+    <p class="line line-big jiaru" style=" border-top: 2px solid #949494;"></p>
         </div>
 </div>
 </div>
 <a name="skip2"></a>
-<div class="banner-sup" style="background: url(img/banner-join.png);background-size: 100% 100%;">
+<div class="banner-jiaru" >
     <div class="container">
         <div class="col-sm-4 col-sm-offset-4" style="text-align: center;font-size: 18px;margin-top: 180px;margin-bottom: 250px">
             <p style="color: white">简历请发至 hr@rokyinfo.com </p>
-            <button class="btnjoin">加入我们</button>
+            <button class="btnjoin"><a style="color:#4b4c8f;font-weight: 500;text-decoration: none" href="mailto:hr@rokyinfo.com">加入我们</a></button>
         </div>
     </div>
 </div>
 <!-- 加入我们 -->
 
 <!--footer-->
-<div id="footer">
+<div id="footer" class="hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-2 footer-item">
@@ -206,5 +312,23 @@
     </div>
 </div>
 
+<div class="col-xs-12 weichat" style="text-align: center;">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 50px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #4b4c8f;font-size: 16px;margin-top: 30px;margin-bottom: 50px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+    </div>
+</div>
+<script>
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
 </body>
 </html>
