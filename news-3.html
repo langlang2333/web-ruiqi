@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+
+    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
+    <title>电动自行车或将实名上牌!(含1月10日限行信息)</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+
+<header>
+
+    <nav  class="navbar navbar-fixed-top my-navbar" role="navigation" >
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 8px;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px;">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;font-size: 14px">
+                    <li><a style="text-shadow: none" href="index.html">首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
+<!-- banner -->
+<div class="banner-news1 hidden-xs" style="background-color:#4b4c8f;padding-bottom: 70px">
+
+</div>
+<!-- banner -->
+
+<!-- 新闻主体 -->
+<div class="main-container" style="background-color: #f3f3f3">
+    <div class="container-fluid">
+        <div class="row main-container-row" style="position: relative">
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
+                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
+                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >电动自行车或将实名上牌!(含1月10日限行信息)</h1>
+                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-10 01:37:00 来源：百家号</p>
+                </div>
+                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                    <p class="new-p" style="margin-bottom: 20px">
+                        近日，河北省公安厅交通管理局根据《道路交通安全法》授权，启动了《河北省电动自行车管理办法》立法工作。
+                        面向广大市民征求电动自行车道路通行及相关管理工作的“金点子”“好办法”，其中涉及电动自行车是否将上牌、
+                        超标电动自行车是否淘汰等问题，快来看看吧。</p>
+                    <div class="col-sm-12"><img src="img/news-9.jpeg" style="width: 100%;padding: 30px"></div>
+
+
+                    <p class="new-p">
+                        日常生活中电动自行车使用方便，很多人都选择使用电动自行车出行。上海、甘肃等省份已经通过地方立法的形式加强对电动自行车的管理，
+                        河北省公安厅交通管理局根据《道路交通安全法》授权，启动了《河北省电动自行车管理办法》立法工作。
+                        这个《办法》出台后将影响到所有的交通参与者，省交管局向市民征求电动自行车道路通行及相关管理工作的办法。
+                    <p>
+
+                    <div class="col-sm-12"><img src="img/news-11.jpeg" style="width: 100%;padding: 30px"></div>
+                    <p class="new-p">
+
+                    很多市民关心电动自行车上牌照需要办理哪些手续，是否需要缴纳费用。对此，相关部门表示，目前正在商讨当中。
+                    是否收费现在还不确定，手续的程序肯定会尽量简化，希望通过互联网+等高科技手段简化管理的手续。
+                    </p>
+                    <p class="new-p">
+                        其他地区是如何管理电动自行车的？
+
+                        电动自行车上牌照，虽然听起来新鲜，但其他省份并非没有先例。目前，上海、成都、南昌、济南等全国不少城市都已通过地方立法的形式加强对电动自行车的管理。
+                    </p>
+                    <div class="col-sm-12"><img src="img/news-12.JPEG" style="width: 100%;padding: 30px"></div>
+                    <p class="new-p">
+                        《上海非机动车管理办法》规定了电动自行车应提交身份证、户口簿或者单位营业执照等合法有效的非机动车所有人身份证明；
+                        购车凭证或者其他非机动车合法来历证明；非机动车整车出厂合格证明公安机关交通管理部门要求提交的其他材料。
+                        如未登记，则不允许上路行驶。</p>
+
+
+                    <div class="col-sm-12"><img src="img/news-13.JPEG" style="width: 100%;padding: 30px"></div>
+                    <p class="new-p">
+
+                        《太原市电动自行车管理条例》明确规定，太原市将实行电动自行车实名登记上牌制度，同时对电动自行车的生产、
+                        销售管理，登记管理，道路通行等进行规范。
+                    </p>
+                    <p class="new-p">
+                        河北的相关部门会在借鉴其他地区做法的基础上，根据本省的实际情况制定适合本地的法规。
+                        现在河北省内电动自行车约有一千万辆左右，数量较大，为了能够方便、高效的进行管理，市民们可以畅所欲言，
+                        为新法规的制定献言献策。
+                    </p>
+                    <p class="new-p">
+                        石家庄市区限行措施
+
+                        明日（1月10日、周三）限行信息汇总
+
+                        石家庄市区：限行2和7
+
+                        尾号为字母的以最后一位数字为准。限行时段为7时至20时，法定节假日和双休日不限行。
+
+                        军队、警务、环境执法、消防、急救、抢险、邮政（快递）、保险勘察救援、民生保障、环卫作业车辆和单位班车、公交车、出租车、金融运钞车、纯电动小型载客汽车不限行。
+
+                        注：各地限号措施如有变化，则以最新发布为准！信息来源：石家庄公安交警
+
+                        石家庄各区县限行措施
+
+                        栾城
+
+                        限行2和7
+
+                        限行时间：7:00-20:00
+
+                        赞皇
+
+                        无极
+
+                        鹿泉
+
+                        赵县
+
+                        高邑
+
+                        新乐
+
+                        行唐
+
+                        正定
+
+                        深泽
+
+                        元氏
+
+                        井陉
+
+                        藁城
+
+                        灵寿
+
+                        限行时间：7:00-20:00
+
+
+                    </p>
+                    <p class="new-p" style="margin-bottom: 110px">
+                        为进一步加强灵寿县城区道路交通秩序管理，规范停车秩序，方便出行停车，改善城区道路交通环境，保障群众出行安全，
+                        根据《中华人民共和国道路交通安全法》及有关规定，灵寿县决定对城区道路实施机动车禁停的具体管理措施。
+
+                        灵寿县城区人民路、正南大街、建设大街、南环路、西环路（松阳大街）、北环路（中山大道）、新开街、广场街、城东街、城西街、牌楼街、城北路全线全天候禁停。
+
+                        晋州
+
+                        其他地区暂无限行信息，具体请以当地限行措施为准。石家庄地区机动车尾号为英文字母或汉字的以最后一位数字为准！
+
+                        河北其他地区限行措施
+
+                        廊坊机动车尾号为英文字母或汉字的按“0”管理。
+
+                    </p>
+                </div>
+
+                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+
+
+                <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
+                    <ul class="pager">
+                        <li class="previous"><a href="news-2.html" title="上一篇">上一篇</a></li>
+                        <li><a href="news.html">← 返回</a></li>
+                        <li class="next"><a href="news-4.html" title="下一篇">下一篇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div id="sidebar" style=" position: relative;margin-left: 30px">
+                    <div id="sidebar-content" class="sidebar-right">
+                        <h3 style="margin-top: 30px;margin-bottom: 10px;
+                        font-weight: 500;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px;width:99%" >最热新闻</h3>
+
+                        <ul style="width: 100%;font-size: 14px;color: #898989;line-height: 25px">
+                            <li onclick="window.location.href='news-1.html'" style="margin-bottom: 32px">·  电动单车公共充电服务迎风口？</li>
+                            <li onclick="window.location.href='news-2.html'" style="margin-bottom: 32px">·  2018 CES：极客必备 Ujet智慧电动单车</li>
+                            <li onclick="window.location.href='news-4.html'" style="margin-bottom: 32px">·  唐山的电动自行车要上牌照了?你关心的信息全在这!|这些评论服了</li>
+
+                            <li onclick="window.location.href='news-5.html'" style="margin-bottom: 32px">·  全球首款商业化的氢能源电动自行车法国上路</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新闻主体-->
+
+<!--footer-->
+<div id="footer" class="hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a href="solution.html#skip3">共享出行</a></li>
+                        <li><a href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="aboutus.html#skip">联系我们</a></li>
+                        <li><a href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #5b5b5b">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路<br/>599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p>微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+    </div>
+</div>
+
+<script>
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>

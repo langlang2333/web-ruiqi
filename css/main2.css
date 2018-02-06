@@ -135,7 +135,7 @@ a:focus{
 @media (min-width: 992px){
 
     .container {
-        width: 1170px;
+        width: 1250px;
     }
 
     #footer .footer-item-last{
@@ -464,11 +464,12 @@ a:focus{
     text-align: center;
     background-color: #404182;
     height: 450px;
+
     padding:10px;
     margin-bottom: 80px;
     margin-top: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 10px;
 }
 .our-whyus-item:hover{
@@ -596,11 +597,15 @@ a:focus{
     .popover-content {
         margin: 5% 0 0 !important;
     }
+
 }
-.our-example{
-    background-color: #f5f5f5;
-}
+
 .our-example-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.our-example-box2{
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -875,9 +880,9 @@ a:focus{
     overflow: hidden;
 }
 #sidebar-content{
-    width: 115%;
+
     height: 100% !important;
-    overflow-y: scroll;
+
 }
 #sidebar-content ul{
     margin: 0;
@@ -1639,7 +1644,7 @@ html, body{
 
 .loginbut{
     float: right;
-    font-size: 16px;
+    font-size: 14px;
     border: 0;
 
     background-color: #ffcc66;
@@ -1661,6 +1666,23 @@ html, body{
     line-height: 28px;
     margin-top: 30px;
 }
+.midwenzi3{
+    color: white;
+    font-size: 16px;
+    letter-spacing:1px;
+    font-family: 微软雅黑;
+    line-height: 28px;
+    margin-top: 30px;
+}
+.midwenzi2{
+    color: white;
+    font-size: 24px;
+    letter-spacing:1px;
+    font-family: 微软雅黑;
+    line-height: 25px;
+    margin-top: 30px;
+    display: none;
+}
 .title-little{
     font-weight: 600;
     font-size: 16px;
@@ -1674,6 +1696,9 @@ html, body{
 }
 .docmokuai{
     text-align: left;
+    margin: 10px;
+    height: 100%;
+    background-color: white;
 }
 .green-title{
     font-weight: 500;
@@ -1723,7 +1748,7 @@ html, body{
 .banner-titles{
     margin-bottom: 40px;
     font-size: 32px;
-
+    line-height: 45px;
     color: white;
     font-weight: 600;
     font-family: "微软雅黑";
@@ -1750,6 +1775,15 @@ html, body{
     text-align: center;
     letter-spacing: 2px;
 }
+.banner-p5{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
 .banner-p3{
     font-size: 14px;
     font-family: "微软雅黑";
@@ -1772,6 +1806,7 @@ html, body{
 .title-mid{
     color: white;
     text-align: center;
+    font-weight: 500;
 
 }
 .my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; background: transparent;
@@ -1785,7 +1820,7 @@ html, body{
     padding-bottom: 5px;
     background: transparent;
     color: #ffcc66;
-    padding-bottom: 20px;}
+    padding-bottom: 15px;}
 
 .my-navbar a {transition: color 0.2s ease-in-out;}/*-webkit-transition ;-moz-transition*/
 .top-nav {padding:0;background:#000;}
@@ -1804,11 +1839,30 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 
 .chaxun{
     margin-top: 80px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+
 }
 @media (max-width: 767px) {
     .chaxun{
         margin-top: 20px;
+
+
     }
+}
+.new-p{
+    line-height: 35px;
+    margin-bottom: 50px;
+    color: #898989;
+
+}
+.new-h{
+    color: #747474;
+    font-size: 16px;
+    font-weight: 600;
 }
 .top{
 
@@ -1833,7 +1887,7 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 }
 
 .wrapper-title{
-    margin-top: 35px;
+    margin-top: 47px;
 }
 .content{
     list-style: none;
@@ -1877,12 +1931,23 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
     font-family: 等线;
 }
 .doc-box{
-    background-color: white;
-    margin: 15px;
-    width: 360px;
+
+    margin-top: 20px;
+    /*width: 360px;*/
     height: 250px;
 
 
+}
+.tedian{
+    width: 380px;
+}
+@media (max-width: 380px) {
+    .doc-box{
+        width: 340px;
+    }
+    .tedian{
+        width: 350px;
+    }
 }
 .title-doc{
     font-family: 微软雅黑;
@@ -1948,6 +2013,10 @@ margin-top: 35px}
 
     display: none;
 }
+.jiaru-p{
+    margin-top: 80px;
+    line-height: 30px;
+}
 
 @media (max-width: 767px) {
     .gongneng {
@@ -1956,6 +2025,9 @@ margin-top: 35px}
     .gongneng1 {
         display: block;
     }
+    .jiaru-p{
+        margin-top: 620px;
+    }
 }
 .sjdaohang{
     display: none;
@@ -1963,7 +2035,7 @@ margin-top: 35px}
 }
 .upNav {
     width: 100%;
-    height: 60%;
+    height: 65%;
     background-color: #fff;
     position: fixed;
     z-index: 999;
@@ -2003,12 +2075,12 @@ margin-top: 35px}
     display: none;
 }
 .banner-abu{
-    background: url(../img/aboutbanner.png);
+    background: url(../img/aboutbanner-min.jpg);
     background-size: 100% 100%;
     height: 500px
 }
 .banner-jiaru{
-    background: url(../img/banner-join.png);
+    background: url(../img/banner-join-min-min.jpg);
     background-size: 100% 100%;
 }
 .sjlianxi{
@@ -2016,6 +2088,7 @@ margin-top: 35px}
 }
 .jiaru{
     padding-bottom: 80px;
+    width: 58px;
 }
 .banner-title3{
     display: none;
@@ -2028,14 +2101,18 @@ margin-top: 35px}
     margin-top: 200px;
     line-height: 45px;
 }
+.bn-1{
+    height:850px;
+
+}
 .bn-2{
     height:850px;
-    background: url(../img/banner2.png);
-    background-size: cover
+    background: url(../img/banner2-min.jpg);
+    background-size: 100% 100%;
 }
 .bn-3{
     height:850px;
-    background: url(../img/banner3.png);
+    background: url(../img/banner3-min.jpg);
     background-size: cover
 }
 .banner-title4{
@@ -2047,8 +2124,15 @@ margin-top: 35px}
     text-align: center;
     margin-top: 200px;
 }
-.solu-1{padding-left: 80px;}
+
+.solu-1{padding-left: 110px;}
 @media (max-width: 767px) {
+    .midwenzi{
+        display: none;
+    }
+    .midwenzi2{
+        display: block;
+    }
     .weichat{
 
       display: block;
@@ -2094,7 +2178,7 @@ margin-top: 35px}
         color: #4b4c8f;
     }
     .banner-abu{
-        background: url(../img/bannerabusj.png);
+        background: url(../img/bannerabusj.jpg);
         background-size: 100% 100%;
         height: 400px;
     }
@@ -2108,7 +2192,7 @@ margin-top: 35px}
         padding-bottom: 20px;
     }
     .banner-jiaru{
-        background: url(../img/jiarusj.png);
+        background: url(../img/jiarusj-min.jpg);
         background-size: 100% 100%;
         height: 400px;
 
@@ -2116,14 +2200,17 @@ margin-top: 35px}
     .banner-title3{
         display: block;
     }
+    .bn-1{
+        height: 800px;
+    }
     .bn-2{
-        height:850px;
-        background: url(../img/banner2sj.png);
+        height:800px;
+        background: url(../img/banner2sj-min.jpg);
         background-size: cover;
     }
     .bn-3{
-        height:850px;
-        background: url(../img/banner3sj.png);
+        height:800px;
+        background: url(../img/banner3sj-min.png);
         background-size: cover;
     }
     .apppic{
@@ -2137,5 +2224,38 @@ margin-top: 35px}
     }
     .banner-p4{
         font-size: 16px;
+    }
+    .part-logo{
+        width: 100%;
+        height:50px ;
+    }
+    .part-logo2{
+        width: 100%;
+        height:50px ;
+    }
+    .partner{
+        width: 98%;
+        padding-top: 8px;
+
+        height: auto;
+    }
+    .partner2{
+        width: 90%;
+
+        height: auto;
+    }
+    .partner3{
+        width: 52%;
+        padding-top: 1px;
+        height: auto;
+    }
+    .partner4{
+        width: 90%;
+        padding-top: 5px;
+        height: auto;
+    }
+    .logo-box{
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+
+
+    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
+    <title>唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+        }
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+
+<header>
+
+    <nav  class="navbar navbar-fixed-top my-navbar" role="navigation" >
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/cailogo.png">
+
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 8px;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px;">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;font-size: 14px">
+                    <li><a style="text-shadow: none" href="index.html">首页</a></li>
+                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+    </div>
+</div>
+<!-- banner -->
+<div class="banner-news1 hidden-xs" style="background-color:#4b4c8f;padding-bottom: 70px">
+
+</div>
+<!-- banner -->
+
+<!-- 新闻主体 -->
+<div class="main-container" style="background-color: #f3f3f3">
+    <div class="container-fluid">
+        <div class="row main-container-row" style="position: relative">
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
+                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
+                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</h1>
+                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-11 00:19:00 来源：百家号</p>
+                </div>
+                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                    <p class="new-p" style="margin-bottom: 20px">
+                        河北省公安厅交通管理局副调研员吴冀徽介绍，该项立法工作会涉及到三大制度：登记制度、公告目录制度和过渡期制度。
+                        “河北省内电动自行车是否上牌照是登记制度中的内容，目前还并未确定，所以现在也在向大家征求意见。
+                        上牌照只是登记的方式之一，如果市民对哪种登记方式比较感兴趣，也可以告诉我们。”吴冀徽告诉记者，
+                        公告目录制度主要是规定哪些车辆能够进行登记。吴冀徽说，“现在新的电动自行车的国家标准正在制定当中，
+                        在新标准出台前，电动自行车的判定会按照之前的标准来进行。”对于过渡期制度，吴冀徽表示：“每个新政策的出台都会有一个过渡期，
+                        目前过渡期的时长还未确定。针对此问题，我们也在向社会各界征求意见。”记者在石家庄街头随机采访了50位市民，
+                        其中，7成以上的市民赞同电动自行车上牌照，市民闫先生就是其中一个。</p>
+                    <div class="col-sm-12"><img src="img/news-14.JPEG" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img src="img/news-15.JPEG" style="width: 100%;padding: 30px"></div>
+
+                    <p class="new-p">
+                        对于这一头条，网友们纷纷赶来围观，并发表自己的观点。@CP13677203813 网友说：实行电子牌照。
+                        网友@用户3002090529519 说：电动车应该取消！禁止上路！ 也有网友@用户35010793936 表示：汽车有证照，
+                        事故少出现了吗？ 不只这些，该话题还吸引了更多大神，下面大家感受下热烈的氛围！
+                    <p>
+                    <p class="new-p">
+
+                    第一回合：
+                    </p>
+                    <p class="new-p">
+                        @郭媚燕 : 我们农村人不上牌，我们的电动车基本上都行驶在田间小路和田埂上，就是出了问题交警也不会光顾，
+                        若进城办事，我们就坐公交车，农村的村村通很方便
+                    </p>
+                    <p class="new-p">
+                        @手机用户84985507332 : 电动车上牌照只是加强管理的一个手段，并不能管住乱穿，乱放，还是要加强民警的管控能力，
+                        提高居 民们自觉意识，原来自行车上牌照不也没解决这些问题吗？丢的同样找不回来，乱穿，乱放现象依然存在，
+                        另外电动车己买几年了，买车的手续早没了，以什么为依据上牌照呢？</p>
+
+
+
+                    <p class="new-p">
+
+                        @老161021703 : 只有交警在路上、路口严格纠正各类违章，时间长了违章少了事故就少了，现在交警只管汽车，应该管所有交通参与者。
+                    </p>
+                    <p class="new-p">
+                        第二回合：
+                    </p>
+                    <p class="new-p">
+                        @佰逸1 : 发财致富的好门路，燃油的已不能满足我们的收入了
+                    </p>
+                    <p class="new-p">
+                        @天龙长笑 : 支持电动汽车电动自行车电动四轮三轮车上牌，做到有章可循，有故障可查违章必纠。
+                    </p>
+                    <p class="new-p" >
+                        @心中107191601 : 公路本来就不宽停放汽车还占了一条路，人行道上也是停的都是汽车，窄窄的一小条自行车道。
+                    </p>
+                    <p class="new-p">
+                        第三回合：
+                    </p>
+                    <p class="new-p">
+                        @山鹰草 : 电动自行车不仅上牌照，而且要买保险，违反交通规则也要承担主要责任[来看我]
+                    </p>
+                    <p class="new-p">
+                        @笑对人生58284065 : 现在电瓶车搞运输，拉出租的较多，在马路上恒冲直创，也该管管
+                    </p>
+                    <p class="new-p" >
+                        @手机用户10974006113 : 骑电动车就必须登记上保险学交规，为什么现在电动车出交通事故多，就是缺乏上述管理制度。
+                    </p>
+                    <p class="new-p" style="margin-bottom: 110px">
+                        每次看网友回复，小编都深深的折服！@你，想说点什么呢？说说吧！</p>
+                </div>
+
+                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+
+
+                <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
+                    <ul class="pager">
+                        <li class="previous"><a href="news-3.html" title="上一篇">上一篇</a></li>
+                        <li><a href="news.html">← 返回</a></li>
+                        <li class="next"><a href="news-5.html" title="下一篇">下一篇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div id="sidebar" style=" position: relative;margin-left: 30px">
+                    <div id="sidebar-content" class="sidebar-right">
+                        <h3 style="margin-top: 30px;margin-bottom: 10px;
+                        font-weight: 500;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px;width:99%" >最热新闻</h3>
+
+                        <ul style="width: 100%;font-size: 14px;color: #898989;line-height: 25px">
+                            <li onclick="window.location.href='news-1.html'" style="margin-bottom: 32px">·  电动单车公共充电服务迎风口？</li>
+                            <li onclick="window.location.href='news-2.html'" style="margin-bottom: 32px">·  2018 CES：极客必备 Ujet智慧电动单车</li>
+
+                            <li onclick="window.location.href='news-3.html'" style="margin-bottom: 32px">·  电动自行车或将实名上牌!(含1月10日限行信息)</li>
+                            <li onclick="window.location.href='news-5.html'" style="margin-bottom: 32px">·  全球首款商业化的氢能源电动自行车法国上路</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新闻主体-->
+
+<!--footer-->
+<div id="footer" class="hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a href="solution.html#skip3">共享出行</a></li>
+                        <li><a href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="aboutus.html#skip">联系我们</a></li>
+                        <li><a href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #5b5b5b">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路<br/>599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p>微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+    </div>
+</div>
+
+<script>
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>
