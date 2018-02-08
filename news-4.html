@@ -9,9 +9,6 @@
     <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 
-
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -22,23 +19,27 @@
     <!-- 轮播 -->
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- 自定义样式 -->
     <link href="css/main2.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
-    <title>唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</title>
+
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <title>锐祺智能</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
         @media (max-width: 767px){
             .fixednav{background-color:  white}
+            .my-navbar{
+                height: 48px;
+            }
         }
     </style>
     <script>
@@ -115,12 +116,13 @@
     </nav>
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
-    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+    <div class="upNav" style="transition: top 1s ease 0s;">
         <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="aboutus.html" >关于锐祺</a></span>
     </div>
 </div>
 <!-- banner -->
@@ -130,15 +132,20 @@
 <!-- banner -->
 
 <!-- 新闻主体 -->
-<div class="main-container" style="background-color: #f3f3f3">
+<div class="main-container news-cont" >
     <div class="container-fluid">
         <div class="row main-container-row" style="position: relative">
-            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
-                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</h1>
-                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-11 00:19:00 来源：百家号</p>
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 55px;margin-bottom: 60px">
+                <ol class="breadcrumb newslujing">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li class="active">唐山的电动自行车要上牌照了...</li>
+                </ol>
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;">
+                    <h1 class="h3 news-biaoti" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >唐山的电动自行车要上牌照了?你关心的信息全在这! |这些评论服了</h1>
+                    <p class="news-time" style="color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-11 00:19:00 来源：百家号</p>
                 </div>
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;padding-top: 25px">
                     <p class="new-p" style="margin-bottom: 20px">
                         河北省公安厅交通管理局副调研员吴冀徽介绍，该项立法工作会涉及到三大制度：登记制度、公告目录制度和过渡期制度。
                         “河北省内电动自行车是否上牌照是登记制度中的内容，目前还并未确定，所以现在也在向大家征求意见。
@@ -147,8 +154,8 @@
                         在新标准出台前，电动自行车的判定会按照之前的标准来进行。”对于过渡期制度，吴冀徽表示：“每个新政策的出台都会有一个过渡期，
                         目前过渡期的时长还未确定。针对此问题，我们也在向社会各界征求意见。”记者在石家庄街头随机采访了50位市民，
                         其中，7成以上的市民赞同电动自行车上牌照，市民闫先生就是其中一个。</p>
-                    <div class="col-sm-12"><img src="img/news-14.JPEG" style="width: 100%;padding: 30px"></div>
-                    <div class="col-sm-12"><img src="img/news-15.JPEG" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-14.JPEG" ></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-15.JPEG" ></div>
 
                     <p class="new-p">
                         对于这一头条，网友们纷纷赶来围观，并发表自己的观点。@CP13677203813 网友说：实行电子牌照。
@@ -198,12 +205,17 @@
                     <p class="new-p" >
                         @手机用户10974006113 : 骑电动车就必须登记上保险学交规，为什么现在电动车出交通事故多，就是缺乏上述管理制度。
                     </p>
-                    <p class="new-p" style="margin-bottom: 110px">
+                    <p class="new-p last-p" >
                         每次看网友回复，小编都深深的折服！@你，想说点什么呢？说说吧！</p>
                 </div>
 
-                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="fenge" style="width: 120%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="container fanhui" >
+                    <div class="fhlb" style="margin-bottom: -50px;width: 100%;background-color: #f8f8f8;height: 50px;text-align: center;">
+                        <h4 style="padding-top: 15px;color: #5a5a5a;font-size: 16px" onclick="window.location.href='news.html'">返回列表</h4>
+                    </div>
 
+                </div>
 
                 <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
                     <ul class="pager">
@@ -305,7 +317,7 @@
 
     </div>
     <div class="col-xs-12">
-        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+        <p style="color: #d2eaea;font-size: 12px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 

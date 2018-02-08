@@ -9,9 +9,6 @@
     <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 
-
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -22,23 +19,27 @@
     <!-- 轮播 -->
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- 自定义样式 -->
     <link href="css/main2.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
-    <title>电动自行车或将实名上牌!(含1月10日限行信息)</title>
+
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <title>锐祺智能</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
         @media (max-width: 767px){
             .fixednav{background-color:  white}
+            .my-navbar{
+                height: 48px;
+            }
         }
     </style>
     <script>
@@ -115,12 +116,13 @@
     </nav>
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
-    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+    <div class="upNav" style="transition: top 1s ease 0s;">
         <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="aboutus.html" >关于锐祺</a></span>
     </div>
 </div>
 <!-- banner -->
@@ -130,20 +132,25 @@
 <!-- banner -->
 
 <!-- 新闻主体 -->
-<div class="main-container" style="background-color: #f3f3f3">
+<div class="main-container news-cont" >
     <div class="container-fluid">
         <div class="row main-container-row" style="position: relative">
-            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
-                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >电动自行车或将实名上牌!(含1月10日限行信息)</h1>
-                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-10 01:37:00 来源：百家号</p>
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 55px;margin-bottom: 60px">
+                <ol class="breadcrumb newslujing">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li class="active">电动自行车或将实名上牌...</li>
+                </ol>
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;">
+                    <h1 class="h3 news-biaoti" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >电动自行车或将实名上牌!(含1月10日限行信息)</h1>
+                    <p class="news-time" style="color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-10 01:37:00 来源：百家号</p>
                 </div>
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;padding-top: 25px">
                     <p class="new-p" style="margin-bottom: 20px">
                         近日，河北省公安厅交通管理局根据《道路交通安全法》授权，启动了《河北省电动自行车管理办法》立法工作。
                         面向广大市民征求电动自行车道路通行及相关管理工作的“金点子”“好办法”，其中涉及电动自行车是否将上牌、
                         超标电动自行车是否淘汰等问题，快来看看吧。</p>
-                    <div class="col-sm-12"><img src="img/news-9.jpeg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-9.JPEG" ></div>
 
 
                     <p class="new-p">
@@ -152,7 +159,7 @@
                         这个《办法》出台后将影响到所有的交通参与者，省交管局向市民征求电动自行车道路通行及相关管理工作的办法。
                     <p>
 
-                    <div class="col-sm-12"><img src="img/news-11.jpeg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-11.JPEG" ></div>
                     <p class="new-p">
 
                     很多市民关心电动自行车上牌照需要办理哪些手续，是否需要缴纳费用。对此，相关部门表示，目前正在商讨当中。
@@ -163,14 +170,14 @@
 
                         电动自行车上牌照，虽然听起来新鲜，但其他省份并非没有先例。目前，上海、成都、南昌、济南等全国不少城市都已通过地方立法的形式加强对电动自行车的管理。
                     </p>
-                    <div class="col-sm-12"><img src="img/news-12.JPEG" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-12.JPEG" ></div>
                     <p class="new-p">
                         《上海非机动车管理办法》规定了电动自行车应提交身份证、户口簿或者单位营业执照等合法有效的非机动车所有人身份证明；
                         购车凭证或者其他非机动车合法来历证明；非机动车整车出厂合格证明公安机关交通管理部门要求提交的其他材料。
                         如未登记，则不允许上路行驶。</p>
 
 
-                    <div class="col-sm-12"><img src="img/news-13.JPEG" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-13.JPEG" ></div>
                     <p class="new-p">
 
                         《太原市电动自行车管理条例》明确规定，太原市将实行电动自行车实名登记上牌制度，同时对电动自行车的生产、
@@ -232,7 +239,7 @@
 
 
                     </p>
-                    <p class="new-p" style="margin-bottom: 110px">
+                    <p class="new-p last-p" >
                         为进一步加强灵寿县城区道路交通秩序管理，规范停车秩序，方便出行停车，改善城区道路交通环境，保障群众出行安全，
                         根据《中华人民共和国道路交通安全法》及有关规定，灵寿县决定对城区道路实施机动车禁停的具体管理措施。
 
@@ -249,8 +256,13 @@
                     </p>
                 </div>
 
-                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="fenge" style="width: 120%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="container fanhui" >
+                    <div class="fhlb" style="margin-bottom: -50px;width: 100%;background-color: #f8f8f8;height: 50px;text-align: center;">
+                        <h4 style="padding-top: 15px;color: #5a5a5a;font-size: 16px" onclick="window.location.href='news.html'">返回列表</h4>
+                    </div>
 
+                </div>
 
                 <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
                     <ul class="pager">
@@ -352,7 +364,7 @@
 
     </div>
     <div class="col-xs-12">
-        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+        <p style="color: #d2eaea;font-size: 12px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 

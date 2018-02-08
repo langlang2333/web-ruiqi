@@ -9,9 +9,6 @@
     <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 
-
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -22,23 +19,27 @@
     <!-- 轮播 -->
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- 自定义样式 -->
     <link href="css/main2.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
-    <title>电动单车公共充电服务迎风口？</title>
+
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <title>锐祺智能</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
         @media (max-width: 767px){
             .fixednav{background-color:  white}
+            .my-navbar{
+                height: 48px;
+            }
         }
     </style>
     <script>
@@ -105,9 +106,6 @@
                     <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
                     <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
 
-
-
-
                 </ul>
 
             </div>
@@ -115,12 +113,13 @@
     </nav>
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
-    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+    <div class="upNav" style="transition: top 1s ease 0s;">
         <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="aboutus.html" >关于锐祺</a></span>
     </div>
 </div>
 <!-- banner -->
@@ -130,20 +129,27 @@
 <!-- banner -->
 
 <!-- 新闻主体 -->
-<div class="main-container" style="background-color: #f3f3f3">
+<div class="main-container news-cont" >
     <div class="container-fluid">
         <div class="row main-container-row" style="position: relative">
-            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
-                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >电动单车公共充电服务迎风口？</h1>
-                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-11 22:32:09 来源：北京商报</p>
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 55px;margin-bottom: 60px">
+                <div class="col-xs-12">
+                    <ol class="breadcrumb newslujing">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="news.html">新闻动态</a></li>
+                        <li class="active">电动单车公共充电服务迎风口？</li>
+                    </ol>
                 </div>
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;">
+                    <h1 class="h3 news-biaoti" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >电动单车公共充电服务迎风口？</h1>
+                    <p class="news-time" style="color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-11 22:32:09 来源：北京商报</p>
+                </div>
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;padding-top: 25px">
                     <p class="new-p" style="margin-bottom: 20px">
                   电动自行车的公共充电服务正在成为企业布局的新风口。近日，北京商报记者了解到，远盈智慧、小绿人科技等企业正在加速电动自行车的公共充电服务布局。
                     近年来，由于市售充电器不合格、车辆线路老化、短路等原因，电动自行车充电事故频发。以此为契机，不少企业试图以建立充电桩、智能充电系统等方式向电动自行车领域进军。
                     业内专家认为，应该制定电动自行车方面的国家性强制标准。但是，与汽车充电桩不同，电动自行车充电服务在获取消费者方面、物业门槛等方面面临更大挑战，未来如何解决这些问题是关键。</p>
-                    <div class="col-sm-12"><img src="img/news-1.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12 "><img class="news-pic" src="img/news-1.jpg" ></div>
 
                     <h4 class="new-h">01 企业蜂拥</h4>
                     <p class="new-p">
@@ -165,7 +171,7 @@
                         久安富赢集团、丝路云和基金以及中国物流与采购联合会、美团、百世快递等相关方参加。</p>
 
                     <h4 class="new-h">02 安全隐患</h4>
-                    <div class="col-sm-12"><img src="img/news-2.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12 newspic"><img class="news-pic" src="img/news-2.jpg" ></div>
                     <p class="new-p">
 
                     企业积极布局的背后，是电动自行车充电造成的安全隐患。目前，电动自行车已成为人们上班、短途出行的重要交通工具。而随着使用数量的增多，
@@ -180,14 +186,20 @@
                     严重的安全隐患引起了各方对电动自行车充电安全问题的重视。2017年12月29日，公安部发布《关于规范电动车停放充电加强火灾防范的通告》，
                         严禁在建筑内的共用走道、楼梯间、安全出口处等公共区域停放电动车或者为电动车充电。而就在前不久，有相关专家也表示，国家对电动自行车相关安全规范应改为强制标准，尤其是在充电装置方面，应尽早制定电动车充电设备的技术行业标准。
                     </p>
-                    <p class="new-p" style="margin-bottom: 110px">
+                    <p class="new-p last-p" >
                     不过，暨南大学行政法学专业教授刘文静在接受北京商报记者采访时表示，国家的强制立法只能约束到生产厂家和销售厂家。
                         生产产家在出厂时要明确合格检验标准也就是国家出台的强制标准，销售厂家在销售时也应明确合格证。任何一方存在问题，都是违法的，
                         但对于个人要在哪里充电的监管则比较困难，可操作性不强。
                 </p>
                 </div>
 
-                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="fenge" style="width: 120%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="container fanhui" >
+                    <div class="fhlb" style="margin-bottom: -50px;width: 100%;background-color: #f8f8f8;height: 50px;text-align: center;">
+                        <h4 style="padding-top: 15px;color: #5a5a5a;font-size: 16px" onclick="window.location.href='news.html'">返回列表</h4>
+                    </div>
+
+                </div>
 
 
                 <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
@@ -289,7 +301,7 @@
 
     </div>
     <div class="col-xs-12">
-        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+        <p style="color: #d2eaea;font-size: 12px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 

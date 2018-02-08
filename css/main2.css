@@ -49,6 +49,12 @@ a:focus{
     border-top: 1px solid #edc852;
     width: 30px;
 }
+.line-news{
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: -40px;
+}
 .line-big{
     margin: 30px auto 26px;
     border-width: 2px;
@@ -63,7 +69,9 @@ a:focus{
     color: white;
     border-top: 1px solid white;
 }
-
+.last{
+    margin-bottom: 80px;
+}
 
 
 @media (max-width: 767px){
@@ -1666,6 +1674,14 @@ html, body{
     line-height: 28px;
     margin-top: 30px;
 }
+.funeng1{
+    color: white;
+    font-size: 16px;
+    letter-spacing:1px;
+
+    line-height: 25px;
+    margin-top: 30px;
+}
 .midwenzi3{
     color: white;
     font-size: 16px;
@@ -1674,14 +1690,20 @@ html, body{
     line-height: 28px;
     margin-top: 30px;
 }
+.cjl-p{
+    font-size: 14px;
+}
 .midwenzi2{
     color: white;
-    font-size: 24px;
+    font-size: 15px;
     letter-spacing:1px;
     font-family: 微软雅黑;
     line-height: 25px;
     margin-top: 30px;
     display: none;
+}
+.guanyp{
+    font-size: 14px;
 }
 .title-little{
     font-weight: 600;
@@ -1696,7 +1718,7 @@ html, body{
 }
 .docmokuai{
     text-align: left;
-    margin: 10px;
+
     height: 100%;
     background-color: white;
 }
@@ -1755,6 +1777,18 @@ html, body{
     letter-spacing: 4px;
     text-align: center;
     margin-top: 200px;
+}
+.banner-titles-solu{
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 45px;
+    color: white;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 200px;
+    display: none;
 }
 .banner-p{
     font-size: 16px;
@@ -1824,12 +1858,13 @@ html, body{
 
 .my-navbar a {transition: color 0.2s ease-in-out;}/*-webkit-transition ;-moz-transition*/
 .top-nav {padding:0;background:#000;}
-button.navbar-toggle {background-color:transparent;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
+button.navbar-toggle {background-color:transparent;margin-top: 0}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
 button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 
 @media (max-width: 767px){
     .my-navbar {padding:10px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; background:white;!important;
         height: 65px;
+        border-bottom: 1px solid #e5e5e5;
     }
 
     }
@@ -1859,6 +1894,9 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
     color: #898989;
 
 }
+.newsp{
+    font-size: 14px;
+}
 .new-h{
     color: #747474;
     font-size: 16px;
@@ -1882,7 +1920,7 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 }
 .wrapper-title{
     font-size: 18px;
-    font-family: 微软雅黑;
+
 
 }
 
@@ -1943,7 +1981,7 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 }
 @media (max-width: 380px) {
     .doc-box{
-        width: 340px;
+
     }
     .tedian{
         width: 350px;
@@ -1980,7 +2018,7 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
 }
 .sidebar-right{
     background-color: white;
-    margin-top: 80px;
+    margin-top: 55px;
     padding: 20px;
 
 }
@@ -2026,7 +2064,12 @@ margin-top: 35px}
         display: block;
     }
     .jiaru-p{
-        margin-top: 620px;
+        margin-top: 30px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .title-doc{
+        font-size: 14px;
     }
 }
 .sjdaohang{
@@ -2039,7 +2082,7 @@ margin-top: 35px}
     background-color: #fff;
     position: fixed;
     z-index: 999;
-    top: -40%;
+    top: 48px;
 }
 .sp:hover {
     background-color: #f5f5f5;
@@ -2053,6 +2096,7 @@ margin-top: 35px}
     border-bottom: 1px solid #f5f5f5;
     text-align: left;
     font-weight: 500;
+    font-size: 14px;
 
 }
 .weichat{
@@ -2124,14 +2168,102 @@ margin-top: 35px}
     text-align: center;
     margin-top: 200px;
 }
+.banner1{
+    font-size: 12px;
 
-.solu-1{padding-left: 110px;}
+    line-height: 30px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    display: none;
+}
+.banner2{
+    display: none;
+}
+.solu-1{
+    padding-left: 110px;
+}
+.why-sj{
+    display: none;
+
+}
+
+.spsj{
+    width: auto;
+    height: 100px;
+}
+.sp-p{
+    font-size: 0.9em;
+}
+.sp-p2{
+    display: none;
+}
+.title-big2{
+
+    display: none;
+}
+.banner-pro{
+    background: url(../img/产品与服务.jpg);
+    background-size: 100% 100%;
+}
+.greenbox{
+    height: 110px;
+}
+.wrapper-title-sj{
+    display: none;
+}
+.wrapper-title-sj2{
+    display: none;
+}
+.sp-why{
+    width: auto;
+    height:90px
+}
+.why-p{
+    font-size: 14px;
+}
+.banner-news{
+    background: url(../img/banner-news-min.jpg);
+    background-size: 100% 100%;
+
+    padding-bottom: 150px;
+}
+.newst{
+    margin-top: 200px
+}
+.newbox{
+    padding: 0;
+}
+.jzmore{
+    margin-bottom: 60px;
+}
+.line-news{
+    display: none;
+}
+.banner-sup{
+    background: url(../img/zhichi-banner-min.jpg);
+    background-size: 100% 100%;
+    padding-bottom: 150px
+}
+
 @media (max-width: 767px) {
+
+    .why-p{
+        font-size: 12px;
+    }
+    .sp-why{
+        width: auto;
+        height:55px
+    }
     .midwenzi{
         display: none;
     }
     .midwenzi2{
         display: block;
+        font-size: 12px;
+
     }
     .weichat{
 
@@ -2173,14 +2305,16 @@ margin-top: 35px}
     .solu-p1{
         display: none;
     }
-    .solu-1{padding-left: 15px;}
+    .solu-1{
+        padding-left: 10%;
+    }
     .huanjie{
         color: #4b4c8f;
     }
     .banner-abu{
         background: url(../img/bannerabusj.jpg);
         background-size: 100% 100%;
-        height: 400px;
+        height: 330px;
     }
     .map{
         width: 100%;
@@ -2189,7 +2323,7 @@ margin-top: 35px}
         display: block;
     }
     .jiaru{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .banner-jiaru{
         background: url(../img/jiarusj-min.jpg);
@@ -2257,5 +2391,276 @@ margin-top: 35px}
     .logo-box{
         padding-left: 12px;
         padding-right: 12px;
+    }
+    .banner1{
+
+        display: block;
+    }
+    .bn-1{
+        height: 100vh;
+    }
+    .bn-2{
+        height: 100vh;
+    }
+    .bn-3{
+        height: 100vh;
+    }
+    .banner2{
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: block;
+        text-align: left;
+
+    }
+    .why-sj{
+        display: block;
+        /*height: 100vh;*/
+    }
+    .spsj{
+        width: auto;
+        height: 50px;
+    }
+    .green-title{
+        font-size: 15px;
+    }
+    .sp-p2{
+        font-size: 12px;
+        display: block;
+    }
+    .spback{
+        background-color: #f5f5f5;
+    }
+    .our-example{
+        padding-bottom: 0;
+    }
+    .title-big2{
+        font-weight: 600;
+        color: #edc852;
+        letter-spacing:2px;
+        font-size: 25px;
+        display: block;
+        line-height: 33px;
+    }
+    .banner-pro{
+        background: url(../img/banner-prosj.jpg);
+        background-size: 100% 100%;
+    }
+    .cjlt{
+        font-size: 25px;
+    }
+    .midwenzi3{
+        font-size: 12px;
+
+    }
+    .banner-titles-solu{
+        display: block;
+    }
+    .top{
+        height: 65px;
+    }
+    .content{
+        height: 65px;
+    }
+    .greenbox{
+        height: 60px;
+    }
+    .wrapper-title{
+        margin-top: 10px;
+
+    }
+    .wrapper-title-sj{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 12px;
+        display: block;
+    }
+    .wrapper-title-sj2{
+        font-size: 10px;
+        display: block;
+    }
+    .green-cont{
+        padding: 0;
+    }
+    .green-l{
+        padding: 0;
+    }
+    .our-example-box{
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+    }
+    .banner-news{
+        background: url(../img/banner-newsj.jpg);
+        background-size: 100% 100%;
+        padding-bottom: 110px;
+    }
+    .newst{
+        margin-top: 150px
+    }
+    .newspbox{
+        padding-left: 30px;
+    }
+    .last{
+        margin-bottom: 30px;
+    }
+    .jzmore{
+        margin-bottom: 30px;
+    }
+    .line-news{
+        display: block;
+    }
+    .banner-title-y{
+        font-size: 22px;
+    }
+    .banner-p-y{
+        font-size: 18px;
+    }
+    .newsp{
+        font-size: 12px;
+    }
+    .news-lianj{
+        font-size: 15px;
+    }
+    .banner-sup{
+        background: url(../img/surbannersj.jpg);
+        background-size: 100% 100%;
+        padding-bottom: 110px;
+    }
+    .guanyu{
+        width: 30px;
+    }
+    .guanyp{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .mokuai3pic1{
+        width: 72px;
+        height: auto;
+
+    }
+    .mokuai3pic2{
+        width: 58px;
+        height: auto;
+
+    }
+    .mokuai3pic3{
+        width: 51px;
+        height: auto;
+        margin-top: 10px;
+
+    }
+    .huanjie{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+}
+.mokuai3pic2{
+    margin-top: 10px;
+}
+.sol2{
+    margin-top: 32px;
+    margin-bottom: 32px
+}
+.sol3{
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+.solu1{
+    margin-top: 80px;
+}
+.news-time{
+    font-size: 14px;
+}
+.news-cont{
+    background-color: #f3f3f3
+}
+.fanhui{
+    display: none;
+}
+.last-p{margin-bottom: 110px}
+.newslujing{
+    display: none;
+}
+.news-pic{
+    width: 100%;
+    padding: 30px;
+}
+@media (max-width: 767px) {
+    .news-pic{
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .newslujing{
+        display: block;
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        background: white;
+    }
+    .last-p{margin-bottom: 40px}
+    .fanhui{
+        display: block;
+    }
+    .article-footer{
+        display: none;
+    }
+    .fenge{
+        display: none;
+    }
+    .news-cont{
+        background-color: white;
+    }
+    .sol2{
+
+        margin-top: 0;
+    }
+    .sol3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .huanjie3{
+        font-size: 12px;
+    }
+    .solu1{
+        margin-top: 0;
+    }
+    .funeng1{
+        display: block;
+        font-size: 12px;
+        color: #b8b9f1;
+    }
+    .title-little{
+        font-size: 14px;
+    }
+    .our-whyus-item p{
+        font-size: 12px;
+    }
+    .index-row{
+        padding: 20px 0;
+    }
+    .huadong2{
+        height: 78vh;
+    }
+    .new-p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .news-biaoti{
+        font-size: 18px;
+
+    }
+    .new-h{
+        font-size: 12px;
+    }
+    .news-time{
+        font-size: 10px;
+    }
+}
+@media (max-width: 405px) {
+
+    .wrapper-title-sj {
+        margin-top: 5px;
     }
 }

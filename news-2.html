@@ -9,9 +9,6 @@
     <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 
-
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css"/>
     <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -22,23 +19,27 @@
     <!-- 轮播 -->
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!-- 自定义样式 -->
     <link href="css/main2.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://www.clantrip.com/static/bootstrap-font/js/bootstrap.min.js"></script>
-    <title>2018 CES：极客必备 Ujet智慧电动单车</title>
+
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <title>锐祺智能</title>
     <style>
         .fixednav{background-color:  rgba(0,0,0,0.5);}
         @media (max-width: 767px){
             .fixednav{background-color:  white}
+            .my-navbar{
+                height: 48px;
+            }
         }
     </style>
     <script>
@@ -115,12 +116,13 @@
     </nav>
 </header>
 <div id="shouji" class="sjdaohang" style="display: none">
-    <div class="upNav" style="top: 65px; transition: top 1s ease 0s;">
+    <div class="upNav" style=" transition: top 1s ease 0s;">
         <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="aboutus.html" >关于锐祺</a></span>
     </div>
 </div>
 <!-- banner -->
@@ -130,15 +132,20 @@
 <!-- banner -->
 
 <!-- 新闻主体 -->
-<div class="main-container" style="background-color: #f3f3f3">
+<div class="main-container news-cont" >
     <div class="container-fluid">
         <div class="row main-container-row" style="position: relative">
-            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 80px;margin-bottom: 60px">
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;">
-                    <h1 class="h3" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >2018 CES：极客必备 Ujet智慧电动单车</h1>
-                    <p style="font-size:14px;color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-10 13:30:00 来源：爱卡汽车</p>
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1 news-article" style="background-color: white;margin-top: 55px;margin-bottom: 60px">
+                <ol class="breadcrumb newslujing">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li class="active">2018 CES：极客必备 Ujet智慧电动单车</li>
+                </ol>
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;">
+                    <h1 class="h3 news-biaoti" style="margin-top: 50px;margin-bottom: 10px;font-weight: 500" >2018 CES：极客必备 Ujet智慧电动单车</h1>
+                    <p class="news-time" style="color:#737373;border-bottom: 1px solid rgba(193,193,193,0.72);padding-bottom: 30px">2018-01-10 13:30:00 来源：爱卡汽车</p>
                 </div>
-                <div class="article-title" style="text-align: left;padding-left: 80px;padding-right: 80px;padding-top: 25px">
+                <div class="article-title" style="text-align: left;padding-left: 5%;padding-right: 5%;padding-top: 25px">
                     <p class="new-p" style="margin-bottom: 20px">
                         城市出行问题该如何解决？如果你嫌公共交通太挤，共享单车效率太低，买一辆汽车承受不起，共享汽车不够方便，那下面要说的这款智慧电动单车你可以考虑考虑。</p>
 
@@ -147,7 +154,7 @@
                     <p class="new-p">
                         在2018 CES展上，来自美国的Ujet公司展示了他们推出的智慧电动单车，这款造型酷炫的电单车专门为解决城市出行问题而生。
                     <p>
-                    <div class="col-sm-12"><img src="img/new-3.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/new-3.jpg" ></div>
                     <p class="new-p">
 
                         仅靠独特的外观设计没有办法做到年轻人所追求的与众不同，丰富的选装才是根本。这款小车的涂装、座椅、电池等统统可以自由搭配。
@@ -162,36 +169,41 @@
                         选装小电池后是43kg，选装大电池为49kg。最大承重达到120kg。</p>
 
 
-                    <div class="col-sm-12"><img src="img/news-4.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-4.jpg" ></div>
                     <p class="new-p">
 
                         这辆车最特别之处相信你也看到了，便是这轮圈，车轮由轮毂电机驱动，独特的结构是营造科幻感的关键所在，
                         不只是电机高大上，轮胎也不容小觑，专门定制，采用了纳米材质，抓地性能更好。前后两个轮毂电机可以为单车提供4kW（5.44Ps）的最大功率，
                         最大扭矩为90Nm，最高车速被电子系统限定在45km/h，另外，这两小车还提供节能、正常、运动三种驾驶模式！
                     </p>
-                    <div class="col-sm-12"><img src="img/news-6.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-6.jpg" ></div>
                     <p class="new-p">
                         在智能互联方面，这辆小车同样表现不错，该车专门配备了一块行车电脑，可以为手机提供Wi-Fi热点，实现GPS定位等功能。
                         通过互联，你可以用自己的手机来随时随地查看车辆续航、位置等状态。
                     </p>
-                    <div class="col-sm-12"><img src="img/news-7.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-7.jpg" ></div>
                     <p class="new-p">
                         多媒体控制按键区域，可以看到接打电话、语音控制等功能，没错，除此之外该车还配备了视频录制功能。
                         在车头位置该车配备了一个摄像头，可以用来记录沿途风景。另一侧控制按键可以控制车辆的灯光、喇叭等功能。
                         70km的续航对于短途出行来说完全够用，如果你不满意可以选装能提供150km续航的大电池，使用快充2小时便可充满电。
                     </p>
-                    <div class="col-sm-12"><img src="img/news-8.jpg" style="width: 100%;padding: 30px"></div>
+                    <div class="col-sm-12"><img class="news-pic" src="img/news-8.jpg" ></div>
                     <p class="new-p">
                         不用担心电池重量太重，来回搬运充电不方便，设计开发人员将电池包设计成拉杆箱样式，取下之后可以依靠电池包下的车轮轻松拖动。
                     </p>
-                    <p class="new-p" style="margin-bottom: 110px">
+                    <p class="new-p last-p" >
                         怎么样？看完之后是不是感觉国产小牛弱爆了？不过你要想得到它可没那么简单，诸多黑科技加持注定这不是便宜货，
                         即使是最低配，售价都高达8000多欧元，想想还是买辆汽车好了。
                     </p>
                 </div>
 
-                <div style="width: 110%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="fenge" style="width: 120%;height: 15px;background-color: #f3f3f3;margin-left: -30px"></div>
+                <div class="container fanhui" >
+                    <div class="fhlb" style="margin-bottom: -50px;width: 100%;background-color: #f8f8f8;height: 50px;text-align: center;">
+                        <h4 style="padding-top: 15px;color: #5a5a5a;font-size: 16px" onclick="window.location.href='news.html'">返回列表</h4>
+                    </div>
 
+                </div>
 
                 <div class="article-footer" style="padding-left: 30px;padding-right: 30px;">
                     <ul class="pager">
@@ -292,7 +304,7 @@
 
     </div>
     <div class="col-xs-12">
-        <p style="color: #d2eaea;font-size: 16px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+        <p style="color: #d2eaea;font-size: 12px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
     </div>
 </div>
 
