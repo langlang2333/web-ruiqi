@@ -19,7 +19,7 @@
     <!-- 轮播 -->
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=upXkuuhfOOuQkOlW7yxP0cVHRKIseXmc"></script>
     <!-- 自定义样式 -->
     <link href="css/main2.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,6 +41,7 @@
                 height: 48px;
             }
         }
+        .BMap_cpyCtrl, .anchorBL { display: none; }
     </style>
     <script>
 
@@ -166,6 +167,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    <div class="row">
     <div class="col-sm-4 col-xs-6 pic-box" style="background-color: #e5e5e5 ;padding-left: 0;
     padding-right: 0;">
         <div class="sixmokuai">
@@ -194,6 +196,7 @@
 
 <!-- 联系我们 -->
 <a name="skip"></a>
+<div class="row">
 <div class="col-sm-6 hidden-xs" style="background-color: #2ba7a6 ;padding-left: 0;
     padding-right: 0;height: 500px">
     <div class="col-sm-5 col-sm-offset-4 hidden-xs" style="margin-top: 120px;padding-bottom: 100px">
@@ -209,11 +212,13 @@
     </div>
 </div>
 
-<div class="col-sm-6 col-xs-12" style="background-color: #d9d9d9; padding-left: 0;
-    padding-right: 0;overflow: hidden">
-<img class="map" style="height:100%;" src="img/map-min.png">
-
+    <div class="map1" id="map" style="overflow: initial;"></div>
 </div>
+
+
+
+
+
 <div class="sjlianxi" style=" background-color: #2ba7a6 ;">
     <div class="container">
         <div class="row">
@@ -221,7 +226,7 @@
                 <h3 style="color: white;">联系我们</h3>
                 <p class="line line-little" style="text-align: left"></p>
 
-                    <p  style="font-size: 14px;color: white;line-height: 30px;margin-top: 70px">
+                    <p style="font-size: 14px;color: white;line-height: 30px;margin-top: 70px">
                         电话：0510-85110586<br/>
                         地址：江苏省无锡市国家工业设计园建筑西路<br/>599号3幢7楼<br/>
                         邮箱：support@rokyinfo.com<br/>
@@ -349,6 +354,32 @@
     </div>
 </div>
 <script>
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(120.2516525588,31.5533752250), 17);
+    map.enableScrollWheelZoom();
+    map.enableInertialDragging();
+    map.enableContinuousZoom();
+    function ZoomControl(){
+        // 默认停靠位置和偏移量
+        this.defaultAnchor = BMAP_ANCHOR_TOP_RIGHT;
+        this.defaultOffset = new BMap.Size(10, 25);
+    }
+
+    // 通过JavaScript的prototype属性继承于BMap.Control
+    ZoomControl.prototype = new BMap.Control();
+
+    // 创建控件
+    var myZoomCtrl = new ZoomControl();
+    // 添加到地图当中
+    map.addControl(myZoomCtrl);
+    var size = new BMap.Size(50, 25);
+    var marker = new BMap.Marker(new BMap.Point(120.2516525588,31.5533752250)); // 创建点
+    map.addOverlay(marker);
+
+
+    map.enableScrollWheelZoom(true);  //开启鼠标滚轮缩放
+
 
     document.getElementById("sjactive").style.color="#4B4C8F";
     function zhankai() {
