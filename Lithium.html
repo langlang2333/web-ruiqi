@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+    <link href="css/buttons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="http://www.clantrip.com/static/bootstrap-font/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 自定义样式 -->
+    <link href="css/main2.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <title>锐祺智能</title>
+    <style>
+        .fixednav{background-color:  rgba(0,0,0,0.5);}
+        @media (max-width: 767px){
+            .fixednav{background-color:  white}
+            .my-navbar{
+                height: 48px;
+            }
+        }
+        .navbar-collapse ul li ul { position:absolute; display:none;margin-top: 15px;color: white;}
+        .navbar-collapse ul li ul li { float:none;}
+        .navbar-collapse ul li:hover ul{ display:block; }
+    </style>
+    <script>
+
+        $(function(){
+
+            var nav=$(".navbar"); //得到导航对象
+
+            var win=$(window); //得到窗口对象
+
+            var sc=$(document);//得到document文档对象。
+
+            win.scroll(function(){
+
+                if(sc.scrollTop()>=60){
+
+                    nav.addClass("fixednav");
+
+                    $(".navTmp").fadeIn();
+
+                }else{
+
+                    nav.removeClass("fixednav");
+
+                    $(".navTmp").fadeOut();
+
+                }
+
+            })
+
+        });
+        function showMenu(emt,id1,id2){
+            document.getElementById(id1).style.textDecoration = "none";
+            document.getElementById(id2).style.display = "block";
+        }
+        function hiddenMenu(emt,id1,id2){
+            document.getElementById(id2).style.display = "none";
+        }
+
+    </script>
+</head>
+<body>
+<!-- 导航条 -->
+
+<header>
+
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        onclick="zhankai()">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img  style="margin-top: 5px;margin-left: 10px" class="hidden-sm hidden-lg hidden-md" src="img/logo-sj.png" width="105">
+                <a class="navbar-brand hidden-xs" href="#" style="border-bottom: none;padding-top: 8px;">
+                    <img class="hidden-xs" alt="Brand" src="img/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px">
+
+                <ul class="nav navbar-nav" id="navlist2" style="float:right;font-size: 14px">
+                    <li><a style="text-shadow: none" href="index.html" >首页</a></li>
+                    <li  onmouseover="showMenu(this,'current','ul1')" onmouseout="hiddenMenu(this,'current','ul1')"><a id="current" style="position:relative;text-shadow: none" href="#" >产品中心</a>
+                        <ul style="position: relative;padding-left: 0;list-style:none;text-decoration: none" id="ul1">
+                            <li style="float: left;"><a id="current2" style="text-decoration: none;border-bottom: none;margin-left: -8px" href="#">锂电</a></li>
+                            <li><a style="text-decoration: none;border-bottom: none;padding-left: 24px"  href="console.html">智能中控</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li><a style="text-shadow: none" href="product.html">系统与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html">解决方案</a></li>
+                    <li><a style="text-shadow: none" href="news.html" >新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
+                    <li><a style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="shouji" class="sjdaohang" style="display: none">
+    <div class="upNav" style="transition: top 1s ease 0s;">
+        <span class="sp"><a style="text-shadow: none;color: black" href="index.html" >首页</a></span>
+        <span class="sp" onclick="show4()"><a style="text-shadow: none;color: black" href="#" >产品中心</a></span>
+        <span class="sp2" id="li-sp"><a style="text-shadow: none;color: black" href="Lithium.html"  id="sjactive">锂电</a></span>
+        <span class="sp2" id="zhong-sp"><a style="text-shadow: none;color: black" href="console.html" >智能中控</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >系统与服务</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="aboutus.html" >关于锐祺</a></span>
+    </div>
+</div>
+<!-- 导航条 -->
+<!-- banner -->
+<div class="banner-solu" style="background: url(img/banner-lidian.jpg);background-size: cover;padding-bottom: 150px">
+    <div class="container">
+        <div class="row">
+
+
+            <h1 class="banner-titles hidden-xs" style="font-size: 37px">锐祺锂电--新国标智能锂电池产品</h1>
+            <h1 class="banner-titles-solu" >锐祺锂电--新国标智能锂电池产品</h1>
+            <p class="banner-p hidden-xs" style="text-align: center;font-size: 20px;letter-spacing: 1px;line-height: 45px;">
+                这是针对新国标的革新性可定制电源，配备了可编程操作系统，保证高性能，长寿命和安全<br/>
+                汽车用18650电芯，安全性能好，适应性能强，产品循环寿命长，高低温环境下性能优异</p>
+            <p class="line line-big bannerline" style="border-top: 1px solid white;    border-width: 2px;width: 50px"></p>
+            <p class="banner-p2" style="text-align: center;font-size: 10px;padding: 25px;">
+                这是针对新国标的革新性可定制电源，配备了可编程操作系统，保证高性能，长寿命和安全
+                汽车用18650电芯，安全性能好，适应性能强，产品循环寿命长，高低温环境下性能优异
+            </p>
+        </div>
+    </div>
+</div>
+<!-- banner -->
+
+<!-- 解决方案 -->
+
+<!-- 解决方案 -->
+
+<!-- why -->
+<div class="index-row our-example" style="background-color: white;">
+    <div class="container" style="margin-bottom: 70px">
+        <div class="row">
+           <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-sm-3 col-xs-6 icon-green" style="text-align: center;">
+                <img src="img/ld1.jpg" style="margin-top: 50px">
+                <p class="iconp" style="margin-top: 42px">大容量</p>
+
+            </div>
+            <div class="col-sm-3 col-xs-6 icon-green" style="text-align: center;">
+                <img src="img/ld2.jpg" style="margin-top: 50px">
+                <p class="iconp" style="margin-top: 39px">小体积</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 icon-green" style="text-align: center;">
+                <img src="img/ld3.jpg" style="margin-top: 65px">
+                <p class="iconp" style="margin-top: 47px">轻重量</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 icon-green" style="text-align: center;">
+                <img src="img/ld4.jpg" style="margin-top: 45px">
+                <p class="iconp" style="margin-top: 29px">多循环</p>
+            </div>
+           </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- why -->
+
+<!-- 特点 -->
+<div class="tedian1" style="height: 605px;">
+<div class="container-fluid">
+        <div class="row" >
+            <div class="col-sm-6 col-xs-12" style="padding-left: 0;padding-right:0;height: 100%">
+                <img class="ld-leftpic" src="img/ld-left.jpg">
+            </div>
+
+            <div class="col-sm-6 col-xs-12 wenzi1" style="padding-top: 50px;padding-bottom:110px;padding-left: 8%;background-color: #f2f2f2;height: 605px">
+                <h3 class="lid-title" >超级智能锂电池特点</h3>
+                <p class="lid-p" >质量</p>
+                <p class="lid-p2">锐祺超级智能锂电池，采用汽车用18650电芯，更高质量保障</p>
+                <p class="lid-p" >智能</p>
+                <p class="lid-p2">电芯控制系统先进。集成了智能中控系统，变身智能车</p>
+                <p class="lid-p" >考验</p>
+                <p class="lid-p2">电池经历过严格实验室测试和最苛刻的多季节气候外卖模式路试</p>
+                <p class="lid-p">兼容</p>
+                <p class="lid-p2">电池设计兼容常规车型，体积更小、重量更轻，方便拆卸与更换</p>
+
+            </div>
+
+
+            <!--<div class="clearfix"></div>-->
+        </div>
+</div>
+</div>
+<!-- 特点 -->
+
+<!-- 优势 -->
+<div class="index-row our-example" style="background-color: white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 hidden-xs  main-title">
+                <h2 class="title-big hidden-xs" style="letter-spacing: 3px;margin-top: 50px">超级智能锂电池优势</h2>
+                <h2 class="title-big2">超级智能锂电池优势</h2>
+                <div class="col-sm-4" style="z-index: 1;margin-top: 120px;text-align: right;">
+                    <p class="title-purple">智能高效的BMS系统</p>
+                    <p class="p-curcle">采用精准的SOC算法，具有过放、过充、过流、短
+                        路、过温、断电等六重保护功能，对电芯
+                        进行充放电均衡，极大延长电池使用寿命</p>
+                    <p class="title-purple" style="margin-top: 290px;margin-right: 50px">创新的精准SOC算法</p>
+                    <p class="p-curcle" style="margin-right: 50px">采用锐祺专利技术的SOC算法，极大提升了电池容量计算的精准度，配合锐祺车精灵大数据平台，真正实现剩余里程计算</p>
+                </div>
+
+
+            <div class="col-sm-4 col-xs-12" style="margin-top: 178px;margin-left: -90px;">
+                <img class="apppic" src="img/chart-dark-b1.jpg">
+            </div>
+                <div class="col-sm-4 col-sm-offset-1" style="z-index: 1;text-align: left;">
+                    <p class="title-purple" style="margin-top: 160px;margin-left: 50px">长寿命、强动力</p>
+                    <p class="p-curcle" style="margin-left: 50px">采用汽车级18650动力电芯，高品质、低内阻，确保1000次以上循环寿命和瞬间大电流输出</p>
+                    <p class="title-purple" style="margin-top: 210px;margin-left: 80px">坚固耐用、安全可靠</p>
+                    <p class="p-curcle" style="margin-left: 80px">采用创新的蜂巢式支架pack设计方案，使用高阻燃材料，监控到每一颗电芯，
+                        安全耐用的设计理念深入到每个细节</p>
+                </div>
+
+                <div class="col-sm-4 col-sm-offset-5 " style="z-index: 1;text-align: left;margin-bottom: 110px">
+                    <p class="title-purple" style="margin-top: 30px;margin-left: 70px">创新的物联网技术</p>
+                    <p class="p-curcle" style="margin-left: 70px">采用NB-IoT物联网技术，确保每组电池实时在线，电池情况一目了然，还可以对电池进行远程管理和操控</p>
+
+                </div>
+
+            <div class="clearfix"></div>
+        </div>
+            <div class="col-sm-12 main-title youshild">
+                <h2 class="title-big hidden-xs" style="letter-spacing: 3px;margin-top: 80px">超级智能锂电池优势</h2>
+                <h2 class="title-big2" style="margin-bottom: 30px;margin-top: 250px">超级智能锂电池优势</h2>
+                <div class="col-sm-4" style="z-index: 1;margin-top: 20px;text-align: left;">
+                    <p class="title-purple">智能高效的BMS系统</p>
+                    <p class="p-curcle">采用精准的SOC算法，具有过放、过充、过流、短
+                        路、过温、断电等六重保护功能，对电芯
+                        进行充放电均衡，极大延长电池使用寿命</p>
+                    <p class="title-purple" style="margin-top: 20px;">创新的精准SOC算法</p>
+                    <p class="p-curcle" style="">采用锐祺专利技术的SOC算法，极大提升了电池容量计算的精准度，配合锐祺车精灵大数据平台，真正实现剩余里程计算</p>
+                </div>
+
+
+                <div class="col-sm-4 col-xs-12" style="margin-top: 20px;">
+                    <img class="apppic" src="img/chart-dark-b1.jpg">
+                </div>
+                <div class="col-sm-4 col-sm-offset-1" style="z-index: 1;text-align: left;">
+                    <p class="title-purple" style="margin-top: 20px;">长寿命、强动力</p>
+                    <p class="p-curcle" style="">采用汽车级18650动力电芯，高品质、低内阻，确保1000次以上循环寿命和瞬间大电流输出</p>
+                    <p class="title-purple" style="margin-top: 20px;">坚固耐用、安全可靠</p>
+                    <p class="p-curcle" style="">采用创新的蜂巢式支架pack设计方案，使用高阻燃材料，监控到每一颗电芯，
+                        安全耐用的设计理念深入到每个细节</p>
+                </div>
+
+                <div class="col-sm-4 col-sm-offset-5 " style="z-index: 1;text-align: left;margin-bottom: 30px">
+                    <p class="title-purple" style="margin-top: 20px;">创新的物联网技术</p>
+                    <p class="p-curcle" style="">采用NB-IoT物联网技术，确保每组电池实时在线，电池情况一目了然，还可以对电池进行远程管理和操控</p>
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+    </div>
+</div>
+</div>
+<!-- 优势 -->
+
+<!-- 接口 -->
+<div class="tedian1" style="background-color: #f2f2f2">
+        <div class="container">
+            <div class="row" >
+                <div class="col-sm-12" style="text-align: center">
+                <h2 class="title-big hidden-xs" style="letter-spacing: 3px;margin-top: 78px">接口定义</h2>
+                    <h1 class="title-big2">接口定义</h1>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1" style="text-align: center;margin-top: 67px">
+
+                    <img src="img/jiekou.png" style="width: 100%;">
+                </div>
+                <div class="col-sm-12" style="text-align: center">
+                    <h2 class="title-big hidden-xs" style="letter-spacing: 3px;margin-top: 60px">电气规格</h2>
+                    <h1 class="title-big2">电气规格</h1>
+                </div>
+                <div class="col-sm-10 col-sm-offset-1" style="text-align: center;margin-top: 67px;margin-bottom: 140px;">
+                    <img src="img/dianqi.jpg" style="width: 100%;">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+<!-- 接口 -->
+
+<!--footer-->
+<div id="footer" style="background-color: #33afad" class="hidden-xs">
+    <div class="container" >
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>行业服务</h4>
+                    <ul>
+                        <li><a style="color:#ffffff" href="solution.html#skip3" >生产厂家</a></li>
+                        <li><a style="color:#ffffff" href="solution.html#skip3">共享出行</a></li>
+                        <li><a style="color:#ffffff" href="solution.html#skip3">外卖行业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快速入口</h4>
+                    <ul>
+                        <li><a style="color:#ffffff" href="login.html">车精灵登录</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于锐祺</h4>
+                    <ul>
+                        <li><a style="color:#ffffff" href="aboutus.html">关于我们</a></li>
+                        <li><a style="color:#ffffff" href="aboutus.html#skip">联系我们</a></li>
+                        <li><a style="color:#ffffff" href="aboutus.html#skip2">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 footer-item">
+                <div class="footer-list">
+                    <h4>服务与支持</h4>
+                    <ul style="font-size: 14px;line-height: 2em;color: #ffffff">
+                        <li>电话：0510-85110586</li>
+                        <li>地址：江苏省无锡市国家工业设计园建筑西路<br/>599号3幢7楼</li>
+                        <li>邮箱：support@rokyinfo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img class="img-responsive" src="img/erweima.png">
+                    <p style="color:#ffffff">微信服务号</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="copyright" style="background-color: #2d9d9b">
+        <div class="container" style="color: #f2f2f2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="color:#ffffff">© 无锡锐祺通讯技术有限公司版权所有 苏ICP备14049566号-2</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-xs-12 weichat" style="text-align: center;background-color: #4b4c8f;    margin-top: 0px;">
+    <div class="col-xs-6 col-xs-offset-3">
+        <img style="left: 50%;margin-top: 80px" class="img-responsive" src="img/er.png">
+
+    </div>
+    <div class="col-xs-12">
+        <p style="color: #d2eaea;font-size: 12px;margin-top: 30px;margin-bottom: 80px">© 无锡锐祺通讯技术有限公司版权所有<br/> 苏ICP备14049566号-2</p>
+    </div>
+</div>
+<script>
+    function show1() {
+        document.getElementById("wrap1").style.display="block";
+        document.getElementById("wrap2").style.display="none";
+        document.getElementById("wrap3").style.display="none";
+    }
+    function show2() {
+        document.getElementById("wrap2").style.display="block";
+        document.getElementById("wrap1").style.display="none";
+        document.getElementById("wrap3").style.display="none";
+    }
+    function show3() {
+        document.getElementById("wrap3").style.display="block";
+        document.getElementById("wrap2").style.display="none";
+        document.getElementById("wrap1").style.display="none";
+    }
+
+    function show4() {
+        console.log("233");
+        document.getElementById("li-sp").style.display="inline-block";
+        document.getElementById("zhong-sp").style.display="inline-block";
+
+    }
+    $(document).ready(function(e) {
+
+        $(".content").first().addClass("content_Sty");//第一个按钮默认选中效果，也可以在下面代码上第一个按钮加calss=“content_Sty”;
+        $(".content").click(function(){  //点击下面的按钮触发事件;
+
+//this = 当前点击的哪一个按钮         //siblings意思的同级其他元素式
+            $(this).addClass("content_Sty").siblings().removeClass("content_Sty");
+        })    //addClass添加背景样式("content_Sty") //removeClass移除背景样式("content_Sty");
+    });
+
+    document.getElementById("current").style.color="#ffcc66";
+    document.getElementById("current").style.borderBottom="2px solid #ffcc66";
+    document.getElementById("current").style.paddingBottom="15px ";
+    document.getElementById("current2").style.color="#ffcc66";
+
+    document.getElementById("sjactive").style.color="#4B4C8F";
+    function show4() {
+        if(document.getElementById("li-sp").style.display=="inline-block")
+        {
+            document.getElementById("li-sp").style.display = "none";
+            document.getElementById("zhong-sp").style.display = "none";
+        }
+        else {
+            document.getElementById("li-sp").style.display = "inline-block";
+            document.getElementById("zhong-sp").style.display = "inline-block";
+        }
+
+    }
+    function zhankai() {
+        if(document.getElementById("shouji").style.display=="none"){
+            document.getElementById("shouji").style.display="block"}
+        else{
+            document.getElementById("shouji").style.display="none"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1731,6 +1731,11 @@ html, body{
     font-size: 26px;
     color: #35b0af;
 }
+.green-title-sm{
+    font-weight: 500;
+    font-size: 20px;
+    color: #35b0af;
+}
 .part-logo{
     background-color: white;
     width: 160px;
@@ -1854,7 +1859,7 @@ html, body{
 
 
 .my-navbar a:hover {
-    border-bottom: 2px solid #ffcc66;
+
     padding-bottom: 5px;
     background: transparent;
     color: #ffcc66;
@@ -2091,6 +2096,9 @@ margin-top: 35px}
 .sp:hover {
     background-color: #f5f5f5;
 }
+.sp2:hover {
+    background-color: #f5f5f5;
+}
 .sp {
     display: inline-block;
     width: 100%;
@@ -2101,7 +2109,19 @@ margin-top: 35px}
     text-align: left;
     font-weight: 500;
     font-size: 14px;
-
+    background-color: white;
+}
+.sp2 {
+    display: none;
+    width: 100%;
+    height: 45px;
+    padding-left: 10%;
+    line-height: 45px;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: white;
 }
 .weichat{
 
@@ -2161,6 +2181,11 @@ margin-top: 35px}
 .bn-3{
     height:850px;
     background: url(../img/banner3-min.jpg);
+    background-size: cover
+}
+.bn-4{
+    height:850px;
+    background: url(../img/首页-4.jpg);
     background-size: cover
 }
 .banner-title4{
@@ -2240,6 +2265,9 @@ margin-top: 35px}
     height: 110px;
 }
 .wrapper-title-sj{
+    display: none;
+}
+.wrapper-title-sj3{
     display: none;
 }
 .wrapper-title-sj2{
@@ -2438,6 +2466,9 @@ margin-top: 35px}
     .bn-3{
         height: 100vh;
     }
+    .bn-4{
+        height: 100vh;
+    }
     .banner2{
         font-size: 12px;
         letter-spacing: 1px;
@@ -2451,6 +2482,9 @@ margin-top: 35px}
     }
 
     .green-title{
+        font-size: 15px;
+    }
+    .green-title-sm{
         font-size: 15px;
     }
 
@@ -2499,6 +2533,12 @@ margin-top: 35px}
         font-size: 14px;
         margin-bottom: 0;
         margin-top: 12px;
+        display: block;
+    }
+    .wrapper-title-sj3{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 22px;
         display: block;
     }
     .wrapper-title-sj2{
@@ -2697,4 +2737,138 @@ margin-top: 35px}
     .wrapper-title-sj {
         margin-top: 5px;
     }
+
+
+}
+.purple-p{
+    font-size: 16px;
+    color: #4b4c8f;
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+.icon-green{
+    text-align: center;
+}
+.iconp{
+    color: #33afad;
+    font-size: 20px;
+}
+.title-purple{
+    font-size: 22px;
+    color: #8a2bf5;
+}
+.p-curcle{
+    font-size: 14px;
+    line-height: 22px;
+}
+.gn-p{
+    text-align: center;
+    color: #219493;
+    font-size: 20px;
+    margin-top: 45px;
+}
+.gn-p2{
+    text-align: center;
+    color: #219493;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.lid-title{
+    font-size: 22px;
+    color: #33afad;
+    font-weight: 500
+}
+.lid-p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 45px
+}
+.lid-p2{
+    font-size: 16px;
+
+}
+.five-sj{
+    display: none;
+}
+.youshild{
+    display: none;
+}
+.wrap1t{
+    margin-top: 80px;
+}
+.right-pic{
+    height:414px;
+}
+.left-pic{
+
+    height: 478px;
+}
+@media (min-width: 768px) {
+    .ld-leftpic {
+        width: 100%;
+        height: 605px;
+    }
+}
+@media (max-width: 767px) {
+    .iconp{
+
+        font-size: 16px;
+    }
+    .lid-p{
+        font-size: 14px;
+        margin-top: 30px
+
+    }
+    .lid-p2{
+        font-size: 14px;
+
+    }
+    .lid-title{
+        font-size: 16px;
+        color: #33afad;
+        font-weight: 500
+    }
+    .purple-p{
+        font-size: 14px;
+
+
+    }
+    .ld-leftpic {
+        width: 100%;
+        height: auto;
+    }
+    .title-purple{
+        font-size: 16px;
+        color: #8a2bf5;
+    }
+    .p-curcle{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .gn-p{
+        text-align: center;
+        color: #219493;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .gn-p2{
+
+        font-size: 16px;
+
+    }
+    .five-sj{
+        display: block;
+    }
+    .youshild{
+        display:block;
+    }
+    .right-pic{
+        width: 100%;
+        height: auto;
+    }
+    .left-pic{
+        width: 100%;
+        height: auto;
+    }
+
 }

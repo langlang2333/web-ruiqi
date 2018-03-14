@@ -41,6 +41,9 @@
                 height: 48px;
             }
         }
+        .navbar-collapse ul li ul { position:absolute; display:none;margin-top: 15px;color: white;}
+        .navbar-collapse ul li ul li { float:none;}
+        .navbar-collapse ul li:hover ul{ display:block; }
     </style>
     <script>
 
@@ -70,7 +73,14 @@
 
             })
 
-        })
+        });
+        function showMenu(emt,id1,id2){
+            document.getElementById(id1).style.textDecoration = "none";
+            document.getElementById(id2).style.display = "block";
+        }
+        function hiddenMenu(emt,id1,id2){
+            document.getElementById(id2).style.display = "none";
+        }
 
     </script>
 </head>
@@ -99,12 +109,20 @@
             <div class="collapse navbar-collapse" id="example-navbar-collapse" style="white-space: nowrap;min-width: 990px;">
 
                 <ul class="nav navbar-nav" id="navlist2" style="float:right;font-size: 14px">
-                    <li><a style="text-shadow: none" href="index.html">首页</a></li>
-                    <li><a style="text-shadow: none" href="product.html" >产品与服务</a></li>
-                    <li><a style="text-shadow: none" href="solution.html" >解决方案</a></li>
-                    <li><a style="text-shadow: none" href="news.html">新闻动态</a></li>
+                    <li><a style="text-shadow: none" href="index.html" >首页</a></li>
+                    <li onmouseover="showMenu(this,'current','ul1')" onmouseout="hiddenMenu(this,'current','ul1')"><a  style="position:relative;text-shadow: none" href="#" >产品中心</a>
+                        <ul style="position: relative;padding-left: 0;list-style:none;text-decoration: none" id="ul1">
+                            <li style="float: left;"><a style="text-decoration: none;border-bottom: none;margin-left: -8px" href="Lithium.html">锂电</a></li>
+                            <li><a style="text-decoration: none;border-bottom: none;padding-left: 24px"  href="console.html">智能中控</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li><a style="text-shadow: none" href="product.html">系统与服务</a></li>
+                    <li><a style="text-shadow: none" href="solution.html">解决方案</a></li>
+                    <li><a id="current" style="text-shadow: none" href="#" >新闻动态</a></li>
                     <li><a style="text-shadow: none" href="support.html" >技术支持</a></li>
-                    <li><a  style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
+                    <li><a style="border-bottom: none" href="login.html"><button class="loginbut" > 登录 </button></a></li>
 
                 </ul>
 
@@ -115,7 +133,10 @@
 <div id="shouji" class="sjdaohang" style="display: none">
     <div class="upNav" style="transition: top 1s ease 0s;">
         <span class="sp"><a style="text-shadow: none;color: black" href="index.html">首页</a></span>
-        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >产品与服务</a></span>
+        <span class="sp" onclick="show4()"><a style="text-shadow: none;color: black" href="#" >产品中心</a></span>
+        <span class="sp2" id="li-sp"><a style="text-shadow: none;color: black" href="Lithium.html"  >锂电</a></span>
+        <span class="sp2" id="zhong-sp"><a style="text-shadow: none;color: black" href="console.html" >智能中控</a></span>
+        <span class="sp"><a style="text-shadow: none;color: black" href="product.html" >系统与服务</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="solution.html" >解决方案</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="news.html">新闻动态</a></span>
         <span class="sp"><a style="text-shadow: none;color: black" href="support.html" >技术支持</a></span>
@@ -312,6 +333,18 @@
         else{
             document.getElementById("shouji").style.display="none"
         }
+    }
+    function show4() {
+        if(document.getElementById("li-sp").style.display=="inline-block")
+        {
+            document.getElementById("li-sp").style.display = "none";
+            document.getElementById("zhong-sp").style.display = "none";
+        }
+        else {
+            document.getElementById("li-sp").style.display = "inline-block";
+            document.getElementById("zhong-sp").style.display = "inline-block";
+        }
+
     }
 </script>
 </body>
