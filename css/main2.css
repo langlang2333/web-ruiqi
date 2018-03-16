@@ -2485,7 +2485,7 @@ margin-top: 35px}
         font-size: 15px;
     }
     .green-title-sm{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .spback{
@@ -2917,6 +2917,8 @@ margin-top: 35px}
         padding-bottom: 50px;
         height: auto;
     }
-
+    .wrap1t{
+        margin-top: 30px;
+    }
 
 }
