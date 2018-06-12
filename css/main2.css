@@ -48,7 +48,19 @@ a:focus{
     text-shadow: none;
     background-color: #0ba1e4;
 }
-
+.bn4-title{
+    display: none;
+    color: white;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 200px;
+    line-height: 45px;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 80px;
+}
 .line{
     border-top: 1px solid #edc852;
     width: 30px;
@@ -64,6 +76,13 @@ a:focus{
     border-width: 2px;
     width:80px;
 }
+.line-green{
+
+    margin: 30px auto 26px;
+    border-width: 4px;
+    border-color: #47ada9;
+    width:54px;
+}
 
 .line-little{
     margin: 30px auto 26px;
@@ -77,8 +96,28 @@ a:focus{
     margin-bottom: 80px;
 }
 
-
+.bigpurple-p{
+    font-size: 26px;
+    color: #4b4c8f;
+    letter-spacing: 2px;
+    padding-top: 5px; ;
+}
+.midpurple-p{
+    font-size: 20px;
+    color: #4b4c8f;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    float: left;
+    margin-left: 15px;
+}
+.lidianpic{
+    top:250px;
+}
+.lidianpic-img{
+    margin-left: -180px
+}
 @media (max-width: 767px){
+
 
     body{
         padding-top: 0;
@@ -108,6 +147,19 @@ a:focus{
     }
     #clan-slider #slider-goTop:hover{
         background-position: 0 0 !important;
+    }
+    .bigpurple-p{
+        font-size: 16px;
+    }
+    .midpurple-p{
+        font-size: 16px;
+    }
+    .lidianpic{
+        top:10px;
+    }
+    .lidianpic-img{
+        width: 90%;
+        float: right;
     }
 
 }
@@ -1877,6 +1929,16 @@ button.navbar-toggle > span.icon-bar {background-color:#4b4c8f}
     }
 
     }
+@media (max-width: 321px){
+    .bigpurple-p{
+        font-size: 12px;
+    }
+    .banner-title{
+        font-size: 16px;
+    }
+
+}
+
 .item{
     height: 850px;
 }
@@ -2185,7 +2247,7 @@ margin-top: 35px}
 }
 .bn-4{
     height:850px;
-    background: url(../img/bannerindex-4.jpg);
+    background: url(../img/图层31.png);
     background-size: cover;
 }
 .banner-title4{
@@ -2238,11 +2300,21 @@ margin-top: 35px}
         width: auto;
         height: 50px;
     }
+    .bn4-title{
+        display: block;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
 }
 .sp-p3{
     display: none;
 }
 @media (max-width: 321px) {
+    .bn4-title{
+        display: block;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
     .sp-p3{
         display: block;
         font-size: 11px;}
@@ -2265,6 +2337,9 @@ margin-top: 35px}
     height: 110px;
 }
 .wrapper-title-sj{
+    display: none;
+}
+.wrapper-title-sjl{
     display: none;
 }
 .wrapper-title-sj3{
@@ -2307,6 +2382,12 @@ margin-top: 35px}
     margin-top: 120px;
 }
 @media (max-width: 767px) {
+    .lidianintro{
+        display: none;
+        margin-top: 50px;
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
     .logintit{
         margin-top: 20%;
     }
@@ -2394,7 +2475,10 @@ margin-top: 35px}
     }
     .banner-title3{
         display: block;
+        letter-spacing: 2px;
+        margin-top: 100px;
     }
+
     .bn-1{
         height: 800px;
     }
@@ -2407,6 +2491,11 @@ margin-top: 35px}
         height:800px;
         background: url(../img/banner3sj-min.png);
         background-size: cover;
+    }
+    .bn-4{
+        height:800px;
+        background: url(../img/web-4-min.png);
+        background-size: 100% 100%;
     }
     .apppic{
         width: 100%;
@@ -2474,6 +2563,7 @@ margin-top: 35px}
         letter-spacing: 1px;
         display: block;
         text-align: left;
+        line-height: 16px;
 
     }
     .why-sj{
@@ -2530,6 +2620,12 @@ margin-top: 35px}
 
     }
     .wrapper-title-sj{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 12px;
+        display: block;
+    }
+    .wrapper-title-sjl{
         font-size: 14px;
         margin-bottom: 0;
         margin-top: 12px;
@@ -2732,6 +2828,29 @@ margin-top: 35px}
         font-size: 10px;
     }
 }
+@media (max-width: 320px) {
+    .purple-p2 {
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #4b4c8f;
+    }
+}
+@media (min-width: 321px)and (max-width: 413px) {
+    .purple-p2{
+        font-size: 14px;
+        color: #4b4c8f;
+        letter-spacing: 1px;
+        padding-top: 5px;
+    }
+}
+@media (min-width: 414px){
+    .purple-p2{
+        font-size: 16px;
+        color: #4b4c8f;
+        letter-spacing: 1px;
+        padding-top: 5px;
+    }
+}
 @media (max-width: 405px) {
 
     .wrapper-title-sj {
@@ -2739,7 +2858,9 @@ margin-top: 35px}
     }
 
 
+
 }
+
 .purple-p{
     font-size: 16px;
     color: #4b4c8f;
@@ -2787,6 +2908,11 @@ margin-top: 35px}
     font-size: 16px;
 
 }
+.lid-p3{
+    font-size: 14px;
+    margin-bottom: 40px;
+
+}
 .five-sj{
     display: none;
 }
@@ -2799,6 +2925,12 @@ margin-top: 35px}
 .right-pic{
     height:414px;
     margin-left:170px;
+    margin-top: 66px;
+    margin-bottom: 70px;
+}
+.right-pic-zk{
+    height: 458px;
+    margin-left: 120px;
     margin-top: 66px;
     margin-bottom: 70px;
 }
@@ -2816,6 +2948,7 @@ margin-top: 35px}
 .jiekoupicsj1{
     display: none;
 }
+
 .wenzi11{
     padding-top: 50px;
     padding-bottom:110px;
@@ -2831,14 +2964,103 @@ margin-top: 35px}
     background-size: cover
 }
 @media (min-width: 768px) {
+    .zkwaiguan-box{
+        float: right
+    }
+    .zkwaiguan-p{
+        font-size: 37px;
+        color: white;
+        padding-right: 200px;
+        margin-top: 70px;
+        text-align: right;
+    }
+    .zkwaiguan-pic{
+        float: right;
+        height: 298px;
+        margin-top: 59px;
+        margin-bottom: 59px;
+        margin-right: 150px;
+    }
+    .zkwaiguan-cc{
+        font-size: 20px;
+        color: #edc852;
+        text-align: right;
+        margin-bottom: 150px;
+        padding-right: 80px;
+    }
+    .zkguige-box{
+        background-color: #d2d2d2;
+    }
+    .zkguige-p{
+        font-size: 37px;
+        color:black;
+        padding-left: 300px;
+        margin-top: 70px;
+        text-align: left;
+    }
+    .dqpic1{
+        width: 100%;
+        margin-bottom: 140px;
+    }
+    .lidianintro{
+        display: none;
+        margin-top: 50px;
+        padding-bottom: 40px;
+        padding-top: 90px;
+    }
     .ld-leftpic {
         margin-right: 30px;
         margin-top: 95px;
-
+        float: right;
+    }
+    .ld-leftpic-2 {
+        margin-right: 30px;
+        margin-top: 95px;
+        float: right;
+    }
+    .ld-leftpic-3 {
+        margin-right: 80px;
+        margin-top: 95px;
         float: right;
     }
 }
 @media (max-width: 767px) {
+    .zkwaiguan-box{
+        float: none;
+        text-align: center;
+    }
+    .zkwaiguan-p{
+        font-size: 30px;
+        color: white;
+        float: none;
+        margin-top: 70px
+    }
+    .zkwaiguan-pic{
+        float: none;
+        height: 298px;
+        margin-top: 59px;
+        margin-bottom: 59px;
+    }
+    .zkwaiguan-cc{
+        font-size: 16px;
+        color: #edc852;
+        float: none;
+        margin-bottom: 50px
+    }
+    .zkguige-box{
+        background-color: #fff;
+    }
+    .zkguige-p{
+        font-size: 30px;
+        color:black;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .dqpic1{
+        width: 100%;
+        margin-bottom: 90px;
+    }
+
     .iconp{
 
         font-size: 16px;
@@ -2859,13 +3081,25 @@ margin-top: 35px}
     }
     .purple-p{
         font-size: 14px;
-
-
+        letter-spacing: 1px;
     }
     .ld-leftpic {
         width: 100%;
         height: auto;
         margin-top: 50px;
+    }
+    .ld-leftpic-2 {
+
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        float: right;
+    }
+    .ld-leftpic-3 {
+
+        width: 80%;
+        height: auto;
+        margin-top: 10px;
     }
     .backgreen{
         height: 300px;
@@ -2881,7 +3115,7 @@ margin-top: 35px}
     .gn-p{
         text-align: center;
         color: #219493;
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 20px;
     }
     .gn-p2{
@@ -2896,6 +3130,11 @@ margin-top: 35px}
         display:block;
     }
     .right-pic{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .right-pic-zk{
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -2920,5 +3159,6 @@ margin-top: 35px}
     .wrap1t{
         margin-top: 30px;
     }
+
 
 }
